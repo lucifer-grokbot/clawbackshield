@@ -1,0 +1,476 @@
+# ClawbackShield: full text
+
+> Plain-English help for Social Security and SSI overpayment notices. Not a law firm, not legal advice, not affiliated with SSA. Official source: https://www.ssa.gov/manage-benefits/overpayments
+
+
+---
+
+# https://clawbackshield.netlify.app/
+
+For adult children handling a parent's benefits
+
+## SSA is clawing back Mom's check? Fight back.
+
+Many clawbacks start with SSA's own mistakes. We read the letter, build the waiver, and track it until SSA decides. You stay in control.
+Read the notice free →I'm helping a parent
+- ✓ Not legal advice
+- ✓ Not affiliated with SSA
+- ✓ Notices aren't stored
+
+Sample result
+Overpayment notice · SSDI
+$4,812.00
+SSA says work earnings in 2025 were reported late, so some monthly payments were too high.
+
+Keep benefits unchanged
+Ask within ~30 days
+
+Appeal window
+Generally 60 days
+
+Waiver · SSA-632Suggested
+Reconsideration · SSA-561Option
+Illustrative example, not a real case.
+
+Three calm steps
+
+## How it works
+- 
+1
+
+## Paste or upload
+Drop in the notice as text, a PDF, or a phone photo.
+
+- 
+2
+
+## See it plainly
+Amount, reason, and the dates that matter, in plain English.$4,812
+- 
+3
+
+## File and follow through
+Waiver packet, a pause-withholding letter, and reminders until SSA decides.
+
+## Built for the family member who opens the mail
+
+## Adult children
+Mom's check just got cut in half. You're the one making the calls.
+
+## Spouses
+Juggling the household budget and SSA's letters.
+
+## Rep payees
+Managing benefits for someone else.
+
+## Beneficiaries
+Doing it yourself? It works for you too.
+
+## Free: what to do when the notice arrives
+A one-page checklist: first steps, the forms involved, and the windows to watch.
+I'm a caregiverI'm the beneficiaryRep payeeAdvocateGet the free checklist
+We only use your email to send the checklist and product updates. Unsubscribe anytime.
+
+## PricingPayments opening soon
+Pay per case, not per month. A lawyer often costs $200–$400 an hour, if one will take it at all. Get the free PDF guide.
+
+## Free
+$0
+Understand the notice today.
+- ✓ Plain-English explanation
+- ✓ Deadline tracker + hardship calculator
+- ✓ Free PDF waiver guideRead my notice
+Most families
+
+## Waiver Case
+$299 one-time, per case
+Everything to fight one clawback yourself.
+- ✓ SSA-632 answers to copy onto the form
+- ✓ AI fault argument + hardship statement
+- ✓ Cover letter + printable PDF packet
+- ✓ After-filing tracker: call dates, decision log
+- ✓ Letter asking SSA to pause withholdingStart a case
+
+## Notice Watch
+$19 /mo
+Stay ahead of the next letter.
+- ✓ 50 notice explanations a month
+- ✓ Deadline + follow-up reminders on every case
+- ✓ Cancel anytimeStart Notice Watch
+
+## Help with your case
+$599+ per case
+Done with you, by a real person.
+- ✓ We prepare the paperwork with you
+- ✓ Follow-up until SSA decides
+- ✓ Quoted after a free reviewRequest help
+Small overpayment? Under about $2,000, SSA can often take a waiver request by phone, free. See if yours qualifies before you pay anyone.
+
+## Questions families ask
+Is my overpayment small enough to fix with a phone call?
+Often, yes. SSA can usually take a waiver request by phone for smaller overpayments (currently around $2,000 or less; the limit has changed over time). Call 1-800-772-1213 and ask. It's free, and you may not need us at all. How phone waivers work.Can I stop SSA from taking money out of the check?
+Usually. If you ask for a waiver or appeal within 30 days of getting the notice, SSA generally holds off on withholding until it decides. You can also ask for a lower monthly amount. How to stop withholding.I'm handling this for my mom or dad. Can I do it for them?
+Yes. Most families do. SSA may need your parent's signature on the form, or proof you're the representative payee or have power of attorney. Turn on "I'm helping a parent" when you start a case.What's the difference between a waiver and an appeal?
+A waiver (Form SSA-632) says: even if the amount is right, it wasn't our fault and repaying would be a hardship or unfair. An appeal (reconsideration, Form SSA-561) says: the amount or facts are wrong. You can do both.Are you lawyers? Do you file for me?
+No. ClawbackShield is not a law firm and isn't affiliated with SSA. We help you prepare and track your own request. You sign and send it. Free legal aid is at lawhelp.org.Why pay per case instead of monthly?
+Most families fight one notice. $299 covers that case from packet to decision. Notice Watch ($19/mo) is optional, for people who want ongoing reminders and explanations.
+
+## Important
+This is not legal advice, and we are not affiliated with the Social Security Administration. Deadlines and rules vary by case: always verify on your notice and at ssa.gov.
+
+## Your privacy
+Notices are sent to OpenRouter and processed by Google Gemini to produce your result; we don't save the notice text on our server. Waiver cases you create are saved to your account. See our privacy policy. Tip: you can black out your Social Security number before uploading.
+
+---
+
+# https://clawbackshield.netlify.app/pricing
+
+Pricing
+
+## One clawback. One price.
+Start free. Pay $299 when you want the full case, from packet to SSA's decision.
+
+## Free
+$0
+Understand the notice today.
+- ✓ Plain-English explanation
+- ✓ Deadline tracker + hardship calculator
+- ✓ Free PDF waiver guideRead my notice
+Most families
+
+## Waiver Case
+$299 one-time, per case
+Everything to fight one clawback yourself.
+- ✓ SSA-632 answers to copy onto the form
+- ✓ AI fault argument + hardship statement
+- ✓ Cover letter + printable PDF packet
+- ✓ After-filing tracker: call dates, decision log
+- ✓ Letter asking SSA to pause withholdingStart a case
+
+## Notice Watch
+$19 /mo
+Stay ahead of the next letter.
+- ✓ 50 notice explanations a month
+- ✓ Deadline + follow-up reminders on every case
+- ✓ Cancel anytimeStart Notice Watch
+
+## Help with your case
+$599+ per case
+Done with you, by a real person.
+- ✓ We prepare the paperwork with you
+- ✓ Follow-up until SSA decides
+- ✓ Quoted after a free reviewRequest help
+Small overpayment? Under about $2,000, SSA can often take a waiver request by phone, free. See if yours qualifies before you pay anyone.
+
+## Questions families ask
+Is my overpayment small enough to fix with a phone call?
+Often, yes. SSA can usually take a waiver request by phone for smaller overpayments (currently around $2,000 or less; the limit has changed over time). Call 1-800-772-1213 and ask. It's free, and you may not need us at all. How phone waivers work.Can I stop SSA from taking money out of the check?
+Usually. If you ask for a waiver or appeal within 30 days of getting the notice, SSA generally holds off on withholding until it decides. You can also ask for a lower monthly amount. How to stop withholding.I'm handling this for my mom or dad. Can I do it for them?
+Yes. Most families do. SSA may need your parent's signature on the form, or proof you're the representative payee or have power of attorney. Turn on "I'm helping a parent" when you start a case.What's the difference between a waiver and an appeal?
+A waiver (Form SSA-632) says: even if the amount is right, it wasn't our fault and repaying would be a hardship or unfair. An appeal (reconsideration, Form SSA-561) says: the amount or facts are wrong. You can do both.Are you lawyers? Do you file for me?
+No. ClawbackShield is not a law firm and isn't affiliated with SSA. We help you prepare and track your own request. You sign and send it. Free legal aid is at lawhelp.org.Why pay per case instead of monthly?
+Most families fight one notice. $299 covers that case from packet to decision. Notice Watch ($19/mo) is optional, for people who want ongoing reminders and explanations.
+
+---
+
+# https://clawbackshield.netlify.app/social-security-overpayment-waiver
+
+Overpayment waiver
+
+## Social Security overpayment waiver: how to ask SSA to forgive it
+A waiver asks SSA to drop the debt even if their math is right. You qualify if the overpayment wasn't your fault and paying it back would be a hardship or unfair. It's free to ask, and you can ask at any time.
+Updated October 2026 · Not legal advice · Not affiliated with SSA
+Got a notice right now? Paste it in free and we'll show the amount, the deadlines and your options in plain English.
+
+## Quick answers
+
+- Who qualifies for a Social Security overpayment waiver?
+SSA must waive recovery when you were not at fault and repaying would either defeat the purpose of benefits (you need the money for ordinary living expenses) or be against equity and good conscience. Source: 20 CFR 404.506, 20 CFR 416.550
+
+- Is there a deadline to ask for a waiver?
+No. You can ask for a waiver at any time. Asking within 30 days of the notice generally keeps SSA from starting to withhold until it decides. Source: SSA: Overpayments
+
+- What is the difference between a waiver and an appeal?
+A waiver (Form SSA-632-BK) asks SSA not to collect even if the amount is right. An appeal, called reconsideration (Form SSA-561), says the amount or facts are wrong and has a 60-day deadline. You can file both. Source: Form SSA-632-BK, Form SSA-561
+
+## Who qualifies
+
+Under the law (20 CFR 404.506 for Social Security, 20 CFR 416.550 for SSI), SSA must waive recovery when both are true:
+- You were not at fault. You reported changes, gave correct information, or reasonably didn't know the rules. SSA's own delays count in your favor.
+- Repaying would defeat the purpose of benefits (you need the money for ordinary living expenses), or it would be unfair ("against equity and good conscience"), for example you gave up something relying on the payments.
+If you or your parent were "at fault," a waiver is unlikely. An appeal or a lower payment plan may fit better.
+
+## Waiver vs. appeal
+
+A waiver (Form SSA-632-BK) says: "Maybe we were overpaid, but don't make us pay it back." An appeal, called reconsideration (Form SSA-561), says: "Your amount or facts are wrong." You can file both. Appeals have a 60-day deadline. Waivers don't.
+
+## How to ask, step by step
+
+- Check the amount. If the original overpayment is $2,000 or less, call first. SSA can often waive it by phone. See waiver by phone.
+- Fill out Form SSA-632-BK. Explain why it wasn't your fault and list income, expenses and assets.
+- Attach proof: the notice, bank statements, bills, and any record that you reported changes.
+- Send it to your local SSA office by mail (keep proof), fax, or in person. Keep a full copy.
+- Ask SSA to pause withholding while it decides. See how to stop withholding.
+- Call about two weeks later to confirm it's on file. Write down the date and name.
+
+## Deadlines that matter
+
+You can ask for a waiver any time, even after money is being taken. But asking within 30 days of getting the notice generally keeps SSA from starting to withhold until it decides. SSI notices may give 10 days, so check yours.
+
+## If SSA says no
+
+Before denying a waiver, SSA generally must offer a personal conference, a chance to explain in person or by phone. Go, and bring your proof. If it's still denied, you can ask for reconsideration within 60 days, then a hearing. Free legal aid can help: lawhelp.org.
+
+## Helping a parent?
+
+You can do the work. Your parent (or you, as representative payee or with power of attorney) signs. ClawbackShield has an "I'm helping a parent" mode that words everything for you. Start a case.
+
+## Want it done right, step by step?
+Build the waiver, get a pause-withholding letter, and track it until SSA decides. $299 per case. Notice explanation is free.
+Start a caseSee pricing
+
+## Related guides
+- SSA-632 / SSA-632-BK guide
+- Stop overpayment withholding
+- Waiver by phone (≤ $2,000)
+- Free PDF waiver guide
+Sources: SSA form SSA-632-BK; SSA POMS GN 02250.350 and GN 02250.002; SSA EM-25029; 20 CFR 404.506 and 416.550. Rules change. Confirm on your notice and at ssa.gov.
+
+---
+
+# https://clawbackshield.netlify.app/ssa-632-guide
+
+SSA-632 guide
+
+## SSA-632 and SSA-632-BK: how to fill out the waiver form
+SSA-632-BK is the official Request for Waiver of Overpayment Recovery. People call it the SSA-632. It's the same form. Here's what it asks and how to answer it well.
+Updated October 2026 · Not legal advice · Not affiliated with SSA
+Got a notice right now? Paste it in free and we'll show the amount, the deadlines and your options in plain English.
+
+## Quick answers
+
+- Is SSA-632 the same as SSA-632-BK?
+Yes. SSA-632-BK is the current form number for the Request for Waiver of Overpayment Recovery; people often call it the SSA-632. The form is free from ssa.gov. Source: Form SSA-632-BK
+
+- Which form do I use if I think the amount is wrong?
+Use Form SSA-561 to request reconsideration. To ask only for a smaller monthly repayment, use Form SSA-634. Source: Form SSA-561, Form SSA-634
+
+- Do I need the form for a small overpayment?
+For an original overpayment of $2,000 or less, SSA can often take the waiver request by phone at 1-800-772-1213. Source: SSA POMS GN 02250.350
+
+## SSA-632 vs. SSA-632-BK
+
+"SSA-632-BK" is the current form number (the BK marks the booklet version). "SSA-632" is shorthand. Use the latest version from ssa.gov/forms/ssa-632-bk.pdf. It's free. Never pay for the form itself.
+
+## When to use it, and when not to
+
+Use it if the overpayment wasn't your fault and you can't afford to repay, or repaying would be unfair.
+- $2,000 or less? The form itself tells you to call 1-800-772-1213 instead. See waiver by phone.
+- Think the amount is wrong? Use SSA-561 (reconsideration).
+- Only want smaller monthly payments? Use SSA-634.
+
+## What the form asks
+
+- About the overpayment: amount, the notice, and whose benefits.
+- Why you want a waiver: not your fault, can't afford it, or unfair for other reasons. Check all that apply.
+- Fault questions: what you knew, what you reported, when, and how. Be specific: dates, names, phone or office visits.
+- Household and finances: who lives with you, monthly income, monthly expenses, and assets (cash, bank accounts, investments, extra property).
+- Signature: the beneficiary, or the representative payee / legal guardian.
+
+## Tips that make a difference
+
+- Tell the story in order: what changed, when you told SSA, what SSA did (or didn't do).
+- Use real monthly numbers. If expenses meet or exceed income, say so plainly.
+- Attach proof: bank statements (about 3 months), bills, medical costs, and any record of reporting.
+- Fill every section that applies. Blank answers slow things down.
+- Keep a full copy and proof of mailing or a fax confirmation.
+
+## Where to send it
+
+Mail or fax it to your local Social Security office (find it at ssa.gov office locator), or hand it in. If money is being taken, also send a request to pause withholding. See stop withholding.
+
+## Let us pre-fill the answers
+
+ClawbackShield turns your situation into SSA-632 answers you can copy onto the form, plus a fault argument, hardship statement and cover letter. Start a case ($299 per case; reading your notice is free).
+
+## Want it done right, step by step?
+Build the waiver, get a pause-withholding letter, and track it until SSA decides. $299 per case. Notice explanation is free.
+Start a caseSee pricing
+
+## Related guides
+- Social Security overpayment waiver
+- Stop overpayment withholding
+- Waiver by phone (≤ $2,000)
+- Free PDF waiver guide
+Sources: SSA form SSA-632-BK; SSA POMS GN 02250.350 and GN 02250.002; SSA EM-25029; 20 CFR 404.506 and 416.550. Rules change. Confirm on your notice and at ssa.gov.
+
+---
+
+# https://clawbackshield.netlify.app/stop-overpayment-withholding
+
+Stop withholding
+
+## How to stop SSA from withholding the check
+For Social Security overpayment notices sent since April 25, 2025, SSA's default is to withhold 50% of the monthly check (SSI stays at 10%). You have real ways to pause or shrink that.
+Updated October 2026 · Not legal advice · Not affiliated with SSA
+Got a notice right now? Paste it in free and we'll show the amount, the deadlines and your options in plain English.
+
+## Quick answers
+
+- How much can SSA withhold for an overpayment?
+For Social Security overpayment notices sent on or after April 25, 2025, SSA's default withholding is 50% of the monthly benefit. For SSI, the default is 10% of monthly income. Source: SSA: Overpayments
+
+- How do I stop SSA from withholding my check?
+File a waiver (SSA-632-BK) or an appeal (SSA-561) within 30 days of getting the notice; SSA generally will not start withholding until it decides. If you file later, ask SSA in writing to stop recovery while it reviews. Source: Form SSA-632-BK, Form SSA-561, SSA: Overpayments
+
+- Can I lower the monthly withholding?
+Yes. Use Form SSA-634, Request for Change in Overpayment Recovery Rate, or ask by phone at 1-800-772-1213. Source: Form SSA-634
+
+## The current rules
+
+- Social Security (retirement, survivors, SSDI): default withholding is 50% of the monthly benefit for notices sent on or after April 25, 2025 (SSA EM-25029).
+- SSI: default is 10% of monthly income.
+- Withholding usually starts after your appeal window, so you have time if you act fast.
+
+## 1. Ask for a waiver or appeal within 30 days
+
+If you file a waiver (SSA-632-BK) or an appeal (SSA-561) within 30 days of getting the notice, SSA generally won't start withholding until it decides. SSI notices may say 10 days. Check yours. Asking later still counts. Just ask SSA to stop recovery while it reviews.
+
+## 2. Send a pause request in writing
+
+Put it in writing: "A waiver request was filed on [date]. Please stop recovery until it is decided and refund anything withheld since." Keep proof you sent it. ClawbackShield generates this letter from your case details.
+
+## 3. Ask for a lower monthly amount (SSA-634)
+
+If you'll repay some or all of it, use Form SSA-634 (Request for Change in Overpayment Recovery Rate) to ask for a smaller withholding based on your income and expenses. You can also ask by phone at 1-800-772-1213.
+
+## 4. Small overpayment? Ask for a phone waiver
+
+If the original overpayment is $2,000 or less and you weren't at fault, SSA can often waive it over the phone. See waiver by phone.
+
+## If money was already taken
+
+If SSA approves your waiver, ask it to refund what was withheld after you asked. Keep the decision letter and your records of what was taken.
+
+## Get organized fast
+
+Read your notice free to see your exact deadlines, then learn how waivers work.
+
+## Want it done right, step by step?
+Build the waiver, get a pause-withholding letter, and track it until SSA decides. $299 per case. Notice explanation is free.
+Start a caseSee pricing
+
+## Related guides
+- Social Security overpayment waiver
+- SSA-632 / SSA-632-BK guide
+- Waiver by phone (≤ $2,000)
+- Free PDF waiver guide
+Sources: SSA form SSA-632-BK; SSA POMS GN 02250.350 and GN 02250.002; SSA EM-25029; 20 CFR 404.506 and 416.550. Rules change. Confirm on your notice and at ssa.gov.
+
+---
+
+# https://clawbackshield.netlify.app/waiver-by-phone
+
+Waiver by phone
+
+## Overpayment of $2,000 or less? Try a free phone call first.
+SSA can often waive small overpayments over the phone, with no SSA-632 form, if it can presume you weren't at fault. It's free. You may not need us or anyone else.
+Updated October 2026 · Not legal advice · Not affiliated with SSA
+Got a notice right now? Paste it in free and we'll show the amount, the deadlines and your options in plain English.
+
+## Quick answers
+
+- Can SSA waive an overpayment by phone?
+Often, yes. If the original overpayment is $2,000 or less and SSA can presume you were not at fault, SSA can usually take the waiver request by phone with no SSA-632 form. The limit has changed over time, so ask. Source: SSA POMS GN 02250.350
+
+- What number do I call?
+Call SSA at 1-800-772-1213 (TTY 1-800-325-0778), or call or visit your local Social Security office. Source: SSA: Overpayments
+
+- What if the amount is over $2,000?
+Use Form SSA-632-BK, the Request for Waiver of Overpayment Recovery. SSA can help you complete it. Source: Form SSA-632-BK, SSA POMS GN 02250.350
+
+## Who this works for
+
+- The original overpayment amount (not what's left) is $2,000 or less.
+- SSA can presume you weren't at fault (for example, you didn't hide anything and SSA didn't find fraud).
+- Works for both Social Security and SSI (SSA POMS GN 02250.350).
+The limit used to be $1,000 and has changed over time, so always ask.
+
+## How to ask
+
+- Call SSA at 1-800-772-1213 (TTY 1-800-325-0778), or call or visit your local office.
+- Say: "I'd like to request a waiver of my overpayment. The original amount is under $2,000 and it wasn't my fault."
+- Have the notice ready, and ideally the beneficiary on the line (or your representative payee / power of attorney details).
+- Write down the date, time, the person's name, and what they said.
+- Ask them to confirm the waiver in writing and to stop any withholding.
+
+## If they say you need the form
+
+If SSA can't presume you weren't at fault, or the amount is over $2,000, you'll need the full waiver: Form SSA-632-BK. SSA can also help you complete it over the phone.
+
+## Honest note from us
+
+For small, clear-cut cases, the phone call is usually the fastest and cheapest path. It's free. ClawbackShield is most useful for larger amounts, messy fault questions, or when you're handling it for a parent and need everything organized. Reading your notice with us is always free.
+
+## Want it done right, step by step?
+Build the waiver, get a pause-withholding letter, and track it until SSA decides. $299 per case. Notice explanation is free.
+Start a caseSee pricing
+
+## Related guides
+- Social Security overpayment waiver
+- SSA-632 / SSA-632-BK guide
+- Stop overpayment withholding
+- Free PDF waiver guide
+Sources: SSA form SSA-632-BK; SSA POMS GN 02250.350 and GN 02250.002; SSA EM-25029; 20 CFR 404.506 and 416.550. Rules change. Confirm on your notice and at ssa.gov.
+
+---
+
+# https://clawbackshield.netlify.app/guide
+
+Free PDF guide
+
+## The Family Guide to SSA Overpayment Waivers
+Eight short sections for the person who just opened the letter: the 30-day clock, waiver vs. appeal, how to show it wasn't your fault, how SSA judges hardship, what evidence to gather, and how to file so nothing gets lost.
+- ✓ Find the 3 numbers that matter on the notice
+- ✓ Waiver (SSA-632) vs. appeal (SSA-561)
+- ✓ Stop withholding with the 30-day rule
+- ✓ Build the 'not at fault' argument
+- ✓ Show hardship with your monthly numbers
+- ✓ Evidence checklist + how to file
+EmailGet the free PDF guide
+We'll also email occasional updates. Unsubscribe anytime. Not legal advice.
+
+---
+
+# https://clawbackshield.netlify.app/help
+
+Help with your case
+
+## We'll build the waiver with you
+For families who don't want to do it alone. A real person works through your case with you: we gather the facts and numbers, write the fault argument and hardship statement, prepare your SSA-632 answers and cover letter, and give you a step-by-step filing plan, then we follow up with you until SSA decides.
+From $599 per case, quoted after a free review
+- ✓ First 10 families handled personally by the founder
+- ✓ Reply within 2 business days
+- ✓ You stay in control: you review and sign everything
+- ✓ No payment until you accept the quote
+Not a law firm. Not legal advice. Not affiliated with SSA. For free legal help, contact your local legal aid office (lawhelp.org).
+Prefer to do it yourself? Start a case: the tracker and calculator are free, and the full case is $299.
+
+Your name *
+
+Email *
+
+Phone (optional)
+
+Who is the case for?
+MeMy parentMy spouseSomeone else
+Overpayment amount
+
+Date on the notice
+
+Is SSA already withholding money? How much?
+
+What's going on?
+A few sentences is plenty. Please don't include a Social Security number.
+I understand ClawbackShield is not a law firm and doesn't give legal advice. Help means preparing and organising my waiver paperwork with me; I review and sign everything myself.Request help with my case
+No payment now. We'll reply with a quote first.

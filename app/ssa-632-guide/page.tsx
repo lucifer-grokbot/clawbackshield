@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SeoPage from "@/components/SeoPage";
+import { SRC } from "@/lib/sources";
 const path = "/ssa-632-guide";
 export const metadata: Metadata = { title: "SSA-632 and SSA-632-BK Guide: How to Fill Out the Waiver Form", description: "Plain-English guide to Form SSA-632-BK (Request for Waiver of Overpayment Recovery): when to use it, what each part asks, proof to attach, and where to send it.", alternates: { canonical: path }, openGraph: { title: "SSA-632-BK guide", url: path } };
 export default function Page() {
-  return <SeoPage path={path} eyebrow="SSA-632 guide" title="SSA-632 and SSA-632-BK: how to fill out the waiver form"
+  return <SeoPage path={path} qa={[
+  { q: "Is SSA-632 the same as SSA-632-BK?", a: "Yes. SSA-632-BK is the current form number for the Request for Waiver of Overpayment Recovery; people often call it the SSA-632. The form is free from ssa.gov.", src: [SRC.form632] },
+  { q: "Which form do I use if I think the amount is wrong?", a: "Use Form SSA-561 to request reconsideration. To ask only for a smaller monthly repayment, use Form SSA-634.", src: [SRC.form561, SRC.form634] },
+  { q: "Do I need the form for a small overpayment?", a: "For an original overpayment of $2,000 or less, SSA can often take the waiver request by phone at 1-800-772-1213.", src: [SRC.poms350] },
+]} howto={{ name: "Fill out Form SSA-632-BK", steps: ["Download the latest SSA-632-BK from ssa.gov.", "Describe the overpayment: amount, notice and whose benefits.", "Check every reason that applies: not your fault, cannot afford it, or unfair.", "Answer the fault questions with dates, names and how you reported changes.", "List household members, monthly income, monthly expenses and assets.", "Sign (beneficiary, representative payee or legal guardian), attach proof and send it to your local SSA office."] }} eyebrow="SSA-632 guide" title="SSA-632 and SSA-632-BK: how to fill out the waiver form"
     lead="SSA-632-BK is the official Request for Waiver of Overpayment Recovery. People call it the SSA-632. It's the same form. Here's what it asks and how to answer it well."
     secs={[
       { h: "SSA-632 vs. SSA-632-BK", body: <p>&quot;SSA-632-BK&quot; is the current form number (the BK marks the booklet version). &quot;SSA-632&quot; is shorthand. Use the latest version from <a href="https://www.ssa.gov/forms/ssa-632-bk.pdf" target="_blank" rel="noreferrer">ssa.gov/forms/ssa-632-bk.pdf</a>. It&apos;s free. Never pay for the form itself.</p> },

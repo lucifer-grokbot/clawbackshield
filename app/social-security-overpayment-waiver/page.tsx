@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SeoPage from "@/components/SeoPage";
+import { SRC } from "@/lib/sources";
 const path = "/social-security-overpayment-waiver";
 export const metadata: Metadata = { title: "Social Security Overpayment Waiver: How to Ask SSA to Forgive It", description: "How a Social Security overpayment waiver works: who qualifies, Form SSA-632-BK, deadlines, stopping withholding, and what to do if SSA says no.", alternates: { canonical: path }, openGraph: { title: "Social Security overpayment waiver, explained", url: path } };
 export default function Page() {
-  return <SeoPage path={path} eyebrow="Overpayment waiver" title="Social Security overpayment waiver: how to ask SSA to forgive it"
+  return <SeoPage path={path} qa={[
+  { q: "Who qualifies for a Social Security overpayment waiver?", a: "SSA must waive recovery when you were not at fault and repaying would either defeat the purpose of benefits (you need the money for ordinary living expenses) or be against equity and good conscience.", src: [SRC.cfr404506, SRC.cfr416550] },
+  { q: "Is there a deadline to ask for a waiver?", a: "No. You can ask for a waiver at any time. Asking within 30 days of the notice generally keeps SSA from starting to withhold until it decides.", src: [SRC.overpayments] },
+  { q: "What is the difference between a waiver and an appeal?", a: "A waiver (Form SSA-632-BK) asks SSA not to collect even if the amount is right. An appeal, called reconsideration (Form SSA-561), says the amount or facts are wrong and has a 60-day deadline. You can file both.", src: [SRC.form632, SRC.form561] },
+]} howto={{ name: "Ask SSA to waive a Social Security overpayment", steps: ["Check the original overpayment amount; if it is $2,000 or less, call SSA first.", "Fill out Form SSA-632-BK explaining why it was not your fault and listing income, expenses and assets.", "Attach proof: the notice, bank statements, bills and records that you reported changes.", "Send it to your local SSA office and keep a full copy and proof of sending.", "Ask SSA in writing to pause withholding while it decides.", "Call about two weeks later to confirm it is on file."] }} eyebrow="Overpayment waiver" title="Social Security overpayment waiver: how to ask SSA to forgive it"
     lead="A waiver asks SSA to drop the debt even if their math is right. You qualify if the overpayment wasn't your fault and paying it back would be a hardship or unfair. It's free to ask, and you can ask at any time."
     secs={[
       { h: "Who qualifies", body: <><p>Under the law (20 CFR 404.506 for Social Security, 20 CFR 416.550 for SSI), SSA must waive recovery when <b>both</b> are true:</p><ol><li><b>You were not at fault.</b> You reported changes, gave correct information, or reasonably didn&apos;t know the rules. SSA&apos;s own delays count in your favor.</li><li><b>Repaying would defeat the purpose of benefits</b> (you need the money for ordinary living expenses), <b>or it would be unfair</b> (&quot;against equity and good conscience&quot;), for example you gave up something relying on the payments.</li></ol><p>If you or your parent were &quot;at fault,&quot; a waiver is unlikely. An appeal or a lower payment plan may fit better.</p></> },

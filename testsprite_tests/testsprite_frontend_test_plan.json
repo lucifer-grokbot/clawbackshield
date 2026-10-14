@@ -1,9 +1,9 @@
 [
   {
     "id": "TC001",
-    "title": "Get a plain-English explanation from a pasted notice",
-    "description": "A visitor can paste a Social Security overpayment notice, request an explanation, and receive a plain-English summary with key details and a draft response letter.",
-    "category": "/analyze notice intake and result flow",
+    "title": "Get a plain-English notice summary from pasted text",
+    "description": "A visitor can paste a notice into the analyzer and receive a summary with key dates, options, and a draft letter.",
+    "category": "Analyze notice analysis flow",
     "steps": [
       {
         "type": "action",
@@ -11,11 +11,11 @@
       },
       {
         "type": "action",
-        "description": "Fill in the notice text field with a complete overpayment notice message"
+        "description": "Paste a valid notice into the notice input"
       },
       {
         "type": "action",
-        "description": "Click the button to explain the notice"
+        "description": "Explain the notice"
       },
       {
         "type": "assertion",
@@ -23,15 +23,137 @@
       },
       {
         "type": "assertion",
-        "description": "Verify overpayment details, important dates, response options, and a draft response letter are displayed"
+        "description": "Verify key dates and options are displayed"
       }
     ],
     "priority": "High"
   },
   {
     "id": "TC002",
-    "title": "Analyze a pasted notice and review the full summary",
-    "description": "A user can paste a Social Security overpayment notice, request an explanation, and see the plain-English summary, key dates, response options, and draft response letter.",
+    "title": "Manage a waiver case after filing",
+    "description": "A signed-in user can open an existing case, unlock it, mark it filed, log an SSA call, add a decision note, and access the withholding-pause letter.",
+    "category": "Case timeline actions",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Click the test code sign-in option"
+      },
+      {
+        "type": "action",
+        "description": "Fill the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /cases"
+      },
+      {
+        "type": "action",
+        "description": "Open a case from the list"
+      },
+      {
+        "type": "action",
+        "description": "Unlock the case"
+      },
+      {
+        "type": "action",
+        "description": "Mark the case as filed"
+      },
+      {
+        "type": "action",
+        "description": "Log an SSA call"
+      },
+      {
+        "type": "action",
+        "description": "Add a decision note"
+      },
+      {
+        "type": "action",
+        "description": "Download the withholding-pause letter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the case timeline updates are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the withholding-pause letter is available"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Unlock a case and complete the filed workflow",
+    "description": "A signed-in user can unlock a waiver case, record it as filed, add follow-up notes, and download the withholding-pause letter.",
+    "category": "Case timeline and withholding-pause letter",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Open a case from the case list"
+      },
+      {
+        "type": "action",
+        "description": "Unlock the case"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the filing date field with a valid date"
+      },
+      {
+        "type": "action",
+        "description": "Select a filing method"
+      },
+      {
+        "type": "action",
+        "description": "Mark the case as filed"
+      },
+      {
+        "type": "action",
+        "description": "Log an SSA call note"
+      },
+      {
+        "type": "action",
+        "description": "Add a decision note"
+      },
+      {
+        "type": "action",
+        "description": "Download the withholding-pause letter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the case timeline shows the filed status and follow-up entries"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the withholding-pause letter is available for download"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Explain a pasted overpayment notice",
+    "description": "A guest can paste an SSA overpayment notice and receive a plain-English analysis with the key response details and draft letter.",
     "category": "Notice analysis",
     "steps": [
       {
@@ -40,7 +162,7 @@
       },
       {
         "type": "action",
-        "description": "Fill in the notice text field with a complete Social Security overpayment notice"
+        "description": "Fill in the notice field with a valid overpayment notice"
       },
       {
         "type": "action",
@@ -48,20 +170,115 @@
       },
       {
         "type": "assertion",
-        "description": "Verify a plain-English summary is displayed"
+        "description": "Verify the analysis summary is displayed"
       },
       {
         "type": "assertion",
-        "description": "Verify the overpayment amount, key dates, response options, and draft response letter are displayed"
+        "description": "Verify the draft letter is displayed"
       }
     ],
     "priority": "High"
   },
   {
-    "id": "TC003",
-    "title": "Analyze an uploaded notice file and review the results",
-    "description": "A user can upload a supported notice file, request an explanation, and see the analyzed notice summary and response details.",
+    "id": "TC005",
+    "title": "Sign in with a valid test code",
+    "description": "A user can sign in with a valid test code and reach their account dashboard.",
+    "category": "Test code login",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Click the test code sign-in option"
+      },
+      {
+        "type": "action",
+        "description": "Fill the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code sign-in form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the account dashboard"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify account plan details are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Sign in and return to the account area",
+    "description": "A returning user can sign in with a test code and reach the account area with plan and history information.",
+    "category": "Case timeline and withholding-pause letter",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Open the account area"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the account summary is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify saved analysis history is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Explain an uploaded notice file",
+    "description": "A guest can upload a supported notice file and receive the analysis results with the draft letter.",
     "category": "Notice analysis",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Choose a supported notice file to upload"
+      },
+      {
+        "type": "action",
+        "description": "Request an explanation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the analysis summary is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the draft letter is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "Analyze a notice uploaded from a file",
+    "description": "A visitor can upload a supported notice file and receive the analysis results on the page.",
+    "category": "Analyze notice analysis flow",
     "steps": [
       {
         "type": "action",
@@ -73,234 +290,57 @@
       },
       {
         "type": "action",
-        "description": "Request an explanation"
+        "description": "Explain the notice"
       },
       {
         "type": "assertion",
-        "description": "Verify a notice summary is displayed"
+        "description": "Verify the analysis results are displayed"
       },
       {
         "type": "assertion",
-        "description": "Verify response details and a draft response letter are displayed"
-      }
-    ],
-    "priority": "High"
-  },
-  {
-    "id": "TC004",
-    "title": "See the guest limit after one successful analysis",
-    "description": "A guest can complete one analysis and then receives the one-analysis-per-day limit message on a second attempt with a prompt to sign in free.",
-    "category": "/analyze notice intake and result flow",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Navigate to /analyze"
-      },
-      {
-        "type": "action",
-        "description": "Fill in the notice text field with a complete overpayment notice message"
-      },
-      {
-        "type": "action",
-        "description": "Click the button to explain the notice"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify an analysis result is displayed"
-      },
-      {
-        "type": "action",
-        "description": "Fill in the notice text field with a different complete overpayment notice message"
-      },
-      {
-        "type": "action",
-        "description": "Click the button to explain the notice"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify a daily analysis limit message is displayed"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify a prompt to sign in free is displayed"
-      }
-    ],
-    "priority": "High"
-  },
-  {
-    "id": "TC005",
-    "title": "Review account details and saved analysis history",
-    "description": "A signed-in user can open the account page and view their plan information, remaining analyses, and saved analysis history.",
-    "category": "Account and analysis history",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Navigate to /login"
-      },
-      {
-        "type": "action",
-        "description": "Open the test code sign-in flow"
-      },
-      {
-        "type": "action",
-        "description": "Fill in the test code field with a valid test code"
-      },
-      {
-        "type": "action",
-        "description": "Submit the test code"
-      },
-      {
-        "type": "action",
-        "description": "Click the link to open the account page"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify plan information is displayed"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify remaining analyses and saved analysis history are displayed"
-      }
-    ],
-    "priority": "High"
-  },
-  {
-    "id": "TC006",
-    "title": "Sign in with a test code and review account details",
-    "description": "A demo user can open the test code flow, sign in with a valid code, and see plan details, remaining analyses, and saved analysis history in the account area.",
-    "category": "Login and account access",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Navigate to /login"
-      },
-      {
-        "type": "action",
-        "description": "Open the test code sign-in flow"
-      },
-      {
-        "type": "action",
-        "description": "Fill in the test code field with a valid code"
-      },
-      {
-        "type": "action",
-        "description": "Submit the test code"
-      },
-      {
-        "type": "action",
-        "description": "Navigate to /account"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify plan details are displayed"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify remaining analyses and saved analysis history are displayed"
-      }
-    ],
-    "priority": "High"
-  },
-  {
-    "id": "TC007",
-    "title": "Use a sample notice to see an explanation",
-    "description": "A visitor can load the sample notice on the analysis page, explain it, and review the sample result.",
-    "category": "/analyze notice intake and result flow",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Navigate to /analyze"
-      },
-      {
-        "type": "action",
-        "description": "Click the option to try a sample notice"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify the sample notice text is populated"
-      },
-      {
-        "type": "action",
-        "description": "Click the button to explain the notice"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify a sample plain-English summary is displayed"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify a draft response letter is displayed"
-      }
-    ],
-    "priority": "High"
-  },
-  {
-    "id": "TC008",
-    "title": "Open the test code sign-in flow",
-    "description": "A visitor can open the test code sign-in flow from the login page and enter a valid code to reach the account experience.",
-    "category": "Test code sign-in",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Navigate to /login"
-      },
-      {
-        "type": "action",
-        "description": "Open the test code sign-in flow"
-      },
-      {
-        "type": "action",
-        "description": "Fill in the test code field with a valid test code"
-      },
-      {
-        "type": "action",
-        "description": "Submit the test code"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify the signed-in account experience is displayed"
+        "description": "Verify a draft letter is displayed"
       }
     ],
     "priority": "High"
   },
   {
     "id": "TC009",
-    "title": "Request a sign-in link from the login page",
-    "description": "A user can open the login page, request an email sign-in link, and see the sign-in request status on the page.",
-    "category": "Login and account access",
+    "title": "Use a sample notice to start an analysis",
+    "description": "A visitor can choose a sample notice and get the full analysis results without providing their own document.",
+    "category": "Analyze notice analysis flow",
     "steps": [
       {
         "type": "action",
-        "description": "Navigate to /login"
+        "description": "Navigate to /analyze"
       },
       {
         "type": "action",
-        "description": "Fill in the email field with a valid email address"
+        "description": "Select a sample notice"
       },
       {
         "type": "action",
-        "description": "Request the sign-in link"
+        "description": "Explain the notice"
       },
       {
         "type": "assertion",
-        "description": "Verify a sign-in request status message is displayed"
+        "description": "Verify a plain-English summary is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a draft letter is displayed"
       }
     ],
     "priority": "High"
   },
   {
     "id": "TC010",
-    "title": "Sign out from the account page",
-    "description": "A signed-in user can sign out from the account page and return to an unauthenticated state.",
-    "category": "Account and analysis history",
+    "title": "Download the withholding-pause letter from a case",
+    "description": "A signed-in user can open a case, unlock it, and access the withholding-pause letter without completing the rest of the timeline.",
+    "category": "Case timeline and withholding-pause letter",
     "steps": [
       {
         "type": "action",
         "description": "Navigate to /login"
-      },
-      {
-        "type": "action",
-        "description": "Open the test code sign-in flow"
       },
       {
         "type": "action",
@@ -308,24 +348,36 @@
       },
       {
         "type": "action",
-        "description": "Submit the test code"
+        "description": "Submit the sign-in form"
       },
       {
         "type": "action",
-        "description": "Click the sign out control"
+        "description": "Open a case from the case list"
+      },
+      {
+        "type": "action",
+        "description": "Unlock the case"
+      },
+      {
+        "type": "action",
+        "description": "Download the withholding-pause letter"
       },
       {
         "type": "assertion",
-        "description": "Verify the unauthenticated experience is displayed"
+        "description": "Verify the withholding-pause letter is displayed or available"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the case remains accessible after unlocking"
       }
     ],
     "priority": "High"
   },
   {
     "id": "TC011",
-    "title": "See guidance when the notice text is too short",
-    "description": "A visitor who submits an empty or too-short notice receives validation guidance instead of an analysis.",
-    "category": "/analyze notice intake and result flow",
+    "title": "Copy and download analysis outputs",
+    "description": "A visitor can copy or download the generated notice analysis after it is created.",
+    "category": "Analyze notice analysis flow",
     "steps": [
       {
         "type": "action",
@@ -333,45 +385,89 @@
       },
       {
         "type": "action",
-        "description": "Click the button to explain the notice"
+        "description": "Paste a valid notice into the notice input"
+      },
+      {
+        "type": "action",
+        "description": "Explain the notice"
+      },
+      {
+        "type": "action",
+        "description": "Copy the analysis summary"
+      },
+      {
+        "type": "action",
+        "description": "Download the draft letter"
       },
       {
         "type": "assertion",
-        "description": "Verify a validation message for missing or too-short notice text is displayed"
+        "description": "Verify the analysis content remains visible after copying"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the draft letter download action is available"
       }
     ],
     "priority": "High"
   },
   {
     "id": "TC012",
-    "title": "Submit the checklist email signup and see confirmation",
-    "description": "A user can open the checklist page, submit an email address, and see the signup confirmation state.",
-    "category": "Checklist email capture",
+    "title": "Start a waiver case as a family helper",
+    "description": "A signed-in user can enable family-helper mode, enter beneficiary details, and start a waiver case.",
+    "category": "Case intake for waiver requests",
     "steps": [
       {
         "type": "action",
-        "description": "Navigate to /checklist"
+        "description": "Navigate to /login"
       },
       {
         "type": "action",
-        "description": "Fill in the email field with a valid email address"
+        "description": "Click the test code sign-in option"
       },
       {
         "type": "action",
-        "description": "Submit the email signup form"
+        "description": "Fill the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /cases/new"
+      },
+      {
+        "type": "action",
+        "description": "Enable the option for helping a parent"
+      },
+      {
+        "type": "action",
+        "description": "Fill the beneficiary name field with a valid name"
+      },
+      {
+        "type": "action",
+        "description": "Fill the required intake details"
+      },
+      {
+        "type": "action",
+        "description": "Start a waiver case"
       },
       {
         "type": "assertion",
-        "description": "Verify a confirmation state is displayed"
+        "description": "Verify the new case is created"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify family-helper wording is shown"
       }
     ],
     "priority": "High"
   },
   {
     "id": "TC013",
-    "title": "Request a sign-in link by email",
-    "description": "A visitor can enter an email address on the login page and see confirmation that email sign-in will open soon.",
-    "category": "Email sign-in request",
+    "title": "Review account status and saved history",
+    "description": "A signed-in user can review their plan details, remaining analyses, and saved analysis history on the account page.",
+    "category": "Account dashboard",
     "steps": [
       {
         "type": "action",
@@ -379,45 +475,32 @@
       },
       {
         "type": "action",
-        "description": "Fill in the email field with a valid email address"
+        "description": "Click the test code sign-in option"
       },
       {
         "type": "action",
-        "description": "Click the button to request a sign-in link"
+        "description": "Fill the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code sign-in form"
       },
       {
         "type": "assertion",
-        "description": "Verify an email sign-in confirmation message is displayed"
+        "description": "Verify remaining analyses are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify saved analysis history is displayed"
       }
     ],
     "priority": "High"
   },
   {
     "id": "TC014",
-    "title": "Block access to the account page when not signed in",
-    "description": "An unauthenticated visitor who opens the account page is redirected or blocked from viewing account details.",
-    "category": "Login and account access",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Navigate to /account"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify account details are not visible"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify an access restriction or sign-in prompt is displayed"
-      }
-    ],
-    "priority": "Medium"
-  },
-  {
-    "id": "TC015",
-    "title": "Reject an invalid test code",
-    "description": "A visitor who enters an invalid test code sees an error message and remains unsigned in.",
-    "category": "Test code sign-in",
+    "title": "Start a case for a parent",
+    "description": "A family helper can create a waiver case using the parent-helper mode and see beneficiary-oriented intake fields.",
+    "category": "Case timeline and withholding-pause letter",
     "steps": [
       {
         "type": "action",
@@ -425,40 +508,101 @@
       },
       {
         "type": "action",
-        "description": "Open the test code sign-in flow"
+        "description": "Fill in the test code field with a valid test code"
       },
       {
         "type": "action",
-        "description": "Fill in the test code field with an invalid test code"
+        "description": "Submit the sign-in form"
       },
       {
         "type": "action",
-        "description": "Submit the test code"
+        "description": "Open the new case intake page"
+      },
+      {
+        "type": "action",
+        "description": "Enable the parent-helper mode"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the beneficiary name field"
+      },
+      {
+        "type": "action",
+        "description": "Continue the case intake"
       },
       {
         "type": "assertion",
-        "description": "Verify an invalid test code error message is displayed"
+        "description": "Verify the case intake reflects helper mode wording"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the beneficiary-focused case details are shown"
       }
     ],
-    "priority": "Medium"
+    "priority": "High"
+  },
+  {
+    "id": "TC015",
+    "title": "Start a waiver case without family-helper mode",
+    "description": "A signed-in user can submit the standard waiver intake and create a new case without using helper mode.",
+    "category": "Case intake for waiver requests",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Click the test code sign-in option"
+      },
+      {
+        "type": "action",
+        "description": "Fill the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /cases/new"
+      },
+      {
+        "type": "action",
+        "description": "Fill the required intake details"
+      },
+      {
+        "type": "action",
+        "description": "Start a waiver case"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the new case is created"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the case intake summary is displayed"
+      }
+    ],
+    "priority": "High"
   },
   {
     "id": "TC016",
-    "title": "Read the free checklist and join the email list",
-    "description": "A visitor can view the clawback response checklist and submit an email address to receive the confirmation state.",
-    "category": "Free checklist and email signup",
+    "title": "Read the checklist and join the email list",
+    "description": "A visitor can read the free checklist and submit an email address to join the signup list.",
+    "category": "Free response checklist",
     "steps": [
       {
         "type": "action",
         "description": "Navigate to /checklist"
       },
       {
-        "type": "action",
-        "description": "Scroll to the email signup section"
+        "type": "assertion",
+        "description": "Verify the checklist items are displayed"
       },
       {
         "type": "action",
-        "description": "Fill in the email field with test@example.com"
+        "description": "Fill in the email field with {{LOGIN_USER}}"
       },
       {
         "type": "action",
@@ -466,103 +610,95 @@
       },
       {
         "type": "assertion",
-        "description": "Verify a signup confirmation state is visible"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify the checklist content remains available"
+        "description": "Verify a signup confirmation is displayed"
       }
     ],
-    "priority": "Medium"
+    "priority": "High"
   },
   {
     "id": "TC017",
-    "title": "Use the sample notice walkthrough to see how the analyzer works",
-    "description": "A user can load the sample notice, request an explanation, and review the sample analysis results.",
-    "category": "Sample notice walkthrough",
+    "title": "Compare pricing plans",
+    "description": "A visitor can review the free, case, notice watch, and help offerings on the pricing page.",
+    "category": "Pricing and plan comparison",
     "steps": [
       {
         "type": "action",
-        "description": "Navigate to /analyze"
-      },
-      {
-        "type": "action",
-        "description": "Select the sample notice option"
+        "description": "Navigate to /pricing"
       },
       {
         "type": "assertion",
-        "description": "Verify the notice text is populated in the input area"
-      },
-      {
-        "type": "action",
-        "description": "Request an explanation"
+        "description": "Verify the pricing plans are displayed"
       },
       {
         "type": "assertion",
-        "description": "Verify sample analysis results are displayed"
+        "description": "Verify the free notice read and paid service offerings are displayed"
       }
     ],
-    "priority": "Medium"
+    "priority": "High"
   },
   {
     "id": "TC018",
-    "title": "Submit an email to the checklist signup",
-    "description": "A visitor can submit an email address on the checklist page and see a confirmation state.",
-    "category": "/checklist email capture submission and confirmation",
+    "title": "Open a saved analysis from account history",
+    "description": "A signed-in user can open a prior analysis from account history and view its saved details.",
+    "category": "Account dashboard",
     "steps": [
       {
         "type": "action",
-        "description": "Navigate to /checklist"
+        "description": "Navigate to /login"
       },
       {
         "type": "action",
-        "description": "Fill in the email field with a valid email address"
+        "description": "Click the test code sign-in option"
       },
       {
         "type": "action",
-        "description": "Submit the email signup form"
+        "description": "Fill the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Open a saved analysis from history"
       },
       {
         "type": "assertion",
-        "description": "Verify a confirmation state is displayed"
+        "description": "Verify the saved analysis details are displayed"
       }
     ],
-    "priority": "Medium"
+    "priority": "High"
   },
   {
     "id": "TC019",
-    "title": "Open the draft letter after analysis",
-    "description": "A visitor can generate an analysis and then copy or download the draft response letter from the results view.",
-    "category": "/analyze notice intake and result flow",
+    "title": "Open the phone-waiver guidance from pricing",
+    "description": "A visitor can follow the phone-waiver information from the pricing page and see the guidance content.",
+    "category": "Pricing and plan comparison",
     "steps": [
       {
         "type": "action",
-        "description": "Navigate to /analyze"
+        "description": "Navigate to /pricing"
       },
       {
         "type": "action",
-        "description": "Fill in the notice text field with a complete overpayment notice message"
-      },
-      {
-        "type": "action",
-        "description": "Click the button to explain the notice"
-      },
-      {
-        "type": "action",
-        "description": "Click the control to copy or download the draft letter"
+        "description": "Open the phone-waiver information link"
       },
       {
         "type": "assertion",
-        "description": "Verify the draft response letter remains available after the copy or download action"
+        "description": "Verify the phone-waiver guidance is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the notice analysis handoff is present"
       }
     ],
-    "priority": "Medium"
+    "priority": "High"
   },
   {
     "id": "TC020",
-    "title": "Receive analysis summary by email when enabled",
-    "description": "A user can enable email delivery for the analysis summary and see a confirmation status after submitting a notice.",
-    "category": "Email delivery for analysis summary",
+    "title": "Request the notice summary by email",
+    "description": "A user can enable email delivery for the notice summary and see that delivery was requested after analysis completes.",
+    "category": "Emailing the notice summary",
     "steps": [
       {
         "type": "action",
@@ -574,7 +710,7 @@
       },
       {
         "type": "action",
-        "description": "Fill in the notice text field with a complete Social Security overpayment notice"
+        "description": "Fill in the notice field with a valid overpayment notice"
       },
       {
         "type": "action",
@@ -582,37 +718,37 @@
       },
       {
         "type": "assertion",
-        "description": "Verify an email delivery status message is displayed"
+        "description": "Verify a delivery status message is displayed"
       }
     ],
-    "priority": "Medium"
+    "priority": "High"
   },
   {
     "id": "TC021",
-    "title": "See checklist guidance before signing up",
-    "description": "A visitor can open the checklist page and review the response guidance before submitting an email.",
-    "category": "Free checklist and email signup",
+    "title": "Read pricing and compare plan options",
+    "description": "A visitor can review pricing, understand the free notice read, and compare the paid waiver-case and help offerings.",
+    "category": "Pricing plan review",
     "steps": [
       {
         "type": "action",
-        "description": "Navigate to /checklist"
+        "description": "Navigate to /pricing"
       },
       {
         "type": "assertion",
-        "description": "Verify the checklist guidance is visible"
+        "description": "Verify pricing plan options are displayed"
       },
       {
         "type": "assertion",
-        "description": "Verify the email signup form is visible"
+        "description": "Verify the free notice read and paid support offerings are displayed"
       }
     ],
-    "priority": "Medium"
+    "priority": "High"
   },
   {
     "id": "TC022",
-    "title": "Download the draft response letter after analysis",
-    "description": "A user can complete an analysis and download the generated draft response letter.",
-    "category": "Notice analysis",
+    "title": "Request email delivery of the analysis summary",
+    "description": "A visitor can opt to email the notice summary after generating an analysis.",
+    "category": "Analyze notice analysis flow",
     "steps": [
       {
         "type": "action",
@@ -620,28 +756,36 @@
       },
       {
         "type": "action",
-        "description": "Fill in the notice text field with a complete Social Security overpayment notice"
+        "description": "Paste a valid notice into the notice input"
       },
       {
         "type": "action",
-        "description": "Request an explanation"
+        "description": "Explain the notice"
       },
       {
         "type": "action",
-        "description": "Download the draft response letter"
+        "description": "Select the option to email the summary"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Submit the email delivery request"
       },
       {
         "type": "assertion",
-        "description": "Verify the draft response letter download action completes successfully"
+        "description": "Verify an email delivery confirmation is displayed"
       }
     ],
-    "priority": "Medium"
+    "priority": "High"
   },
   {
     "id": "TC023",
-    "title": "Reject an invalid email on the checklist form",
-    "description": "A visitor entering an invalid email address sees email validation and cannot reach the confirmation state.",
-    "category": "Free checklist and email signup",
+    "title": "Read the checklist and sign up for email updates",
+    "description": "A visitor can read the free checklist and submit the email signup form for updates.",
+    "category": "Checklist read-and-email signup",
     "steps": [
       {
         "type": "action",
@@ -649,11 +793,11 @@
       },
       {
         "type": "action",
-        "description": "Scroll to the email signup section"
+        "description": "Scroll to the email signup form"
       },
       {
         "type": "action",
-        "description": "Fill in the email field with invalid-email"
+        "description": "Fill in the email field with a valid email address"
       },
       {
         "type": "action",
@@ -661,49 +805,16 @@
       },
       {
         "type": "assertion",
-        "description": "Verify an email validation error is visible"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify the signup confirmation state is not visible"
+        "description": "Verify an email signup confirmation is displayed"
       }
     ],
-    "priority": "Medium"
+    "priority": "High"
   },
   {
     "id": "TC024",
-    "title": "Copy the draft response letter after analysis",
-    "description": "A user can complete an analysis and copy the generated draft response letter.",
-    "category": "Notice analysis",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Navigate to /analyze"
-      },
-      {
-        "type": "action",
-        "description": "Fill in the notice text field with a complete Social Security overpayment notice"
-      },
-      {
-        "type": "action",
-        "description": "Request an explanation"
-      },
-      {
-        "type": "action",
-        "description": "Copy the draft response letter"
-      },
-      {
-        "type": "assertion",
-        "description": "Verify the draft response letter copy action completes successfully"
-      }
-    ],
-    "priority": "Medium"
-  },
-  {
-    "id": "TC025",
-    "title": "See validation for an invalid email on the login page",
-    "description": "A visitor who submits the login email form with an empty or invalid address sees email validation guidance.",
-    "category": "Email sign-in request",
+    "title": "Sign out from the account dashboard",
+    "description": "A signed-in user can sign out and return to an unauthenticated state.",
+    "category": "Account dashboard",
     "steps": [
       {
         "type": "action",
@@ -711,75 +822,266 @@
       },
       {
         "type": "action",
-        "description": "Submit the email sign-in form without entering an email address"
+        "description": "Click the test code sign-in option"
+      },
+      {
+        "type": "action",
+        "description": "Fill the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Sign out"
       },
       {
         "type": "assertion",
-        "description": "Verify an email validation error is displayed"
+        "description": "Verify the user is no longer signed in"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the account dashboard is no longer shown"
       }
     ],
-    "priority": "Low"
+    "priority": "High"
+  },
+  {
+    "id": "TC025",
+    "title": "See phone-waiver guidance for a small overpayment",
+    "description": "A guest with a smaller overpayment notice can receive guidance that mentions the phone-waiver option in the analysis result.",
+    "category": "Notice analysis",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notice field with a valid notice describing an overpayment around $2,000 or less"
+      },
+      {
+        "type": "action",
+        "description": "Request an explanation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify phone-waiver guidance is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the analysis summary is displayed"
+      }
+    ],
+    "priority": "High"
   },
   {
     "id": "TC026",
-    "title": "Require email before submitting the checklist form",
-    "description": "A visitor leaving the checklist email field empty sees required-field validation instead of a successful signup.",
-    "category": "Free checklist and email signup",
+    "title": "Follow the phone-waiver guidance from pricing",
+    "description": "A visitor can review the phone-waiver guidance and see the conditions under which it is relevant.",
+    "category": "Pricing plan review",
     "steps": [
       {
         "type": "action",
-        "description": "Navigate to /checklist"
-      },
-      {
-        "type": "action",
-        "description": "Scroll to the email signup section"
-      },
-      {
-        "type": "action",
-        "description": "Submit the email signup form"
+        "description": "Navigate to /waiver-by-phone"
       },
       {
         "type": "assertion",
-        "description": "Verify a required-field validation error is visible"
+        "description": "Verify the phone-waiver guidance is displayed"
       },
       {
         "type": "assertion",
-        "description": "Verify the signup confirmation state is not visible"
+        "description": "Verify the guidance explains when phone waiver filing is appropriate"
       }
     ],
-    "priority": "Low"
+    "priority": "Medium"
   },
   {
     "id": "TC027",
-    "title": "Keep checklist content available after signup",
-    "description": "After successful signup, the visitor still has access to the checklist guidance and confirmation state on the page.",
-    "category": "Free checklist and email signup",
+    "title": "Review the help offering",
+    "description": "A visitor can open the help page and see the done-with-you service details.",
+    "category": "Done-with-you help inquiry",
     "steps": [
       {
         "type": "action",
-        "description": "Navigate to /checklist"
-      },
-      {
-        "type": "action",
-        "description": "Scroll to the email signup section"
-      },
-      {
-        "type": "action",
-        "description": "Fill in the email field with test@example.com"
-      },
-      {
-        "type": "action",
-        "description": "Submit the email signup form"
+        "description": "Navigate to /help"
       },
       {
         "type": "assertion",
-        "description": "Verify a signup confirmation state is visible"
+        "description": "Verify the help offering details are displayed"
       },
       {
         "type": "assertion",
-        "description": "Verify the checklist guidance is still visible"
+        "description": "Verify the request for help information is visible"
       }
     ],
-    "priority": "Low"
+    "priority": "Medium"
+  },
+  {
+    "id": "TC028",
+    "title": "Continue from a guide page into notice analysis",
+    "description": "A visitor can use an SEO guide page and follow the call to action back into the notice analysis flow.",
+    "category": "SEO guide pages",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /ssa-632-guide"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to review a notice"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the notice analysis page is shown"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the analysis entry area is available"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC029",
+    "title": "Find the help option from a guide page",
+    "description": "A visitor can read a guide page and follow the call to action to the done-with-you help path.",
+    "category": "SEO guide pages",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /stop-overpayment-withholding"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to get help"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the help page is shown"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify help inquiry options are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC030",
+    "title": "Open the phone waiver guide and continue to notice review",
+    "description": "A visitor can read the phone waiver guide and use its call-to-action to start notice analysis.",
+    "category": "SEO guide pages",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /waiver-by-phone"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the call-to-action section"
+      },
+      {
+        "type": "action",
+        "description": "Click the call-to-action to continue to notice review"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the notice review page is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify guide content is no longer the primary view"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC031",
+    "title": "Reject an invalid test code",
+    "description": "A user sees an invalid-code message when they try to sign in with a bad test code.",
+    "category": "Test code login",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Click the test code sign-in option"
+      },
+      {
+        "type": "action",
+        "description": "Fill the test code field with an invalid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code sign-in form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an invalid test code message is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC032",
+    "title": "Open the SSA-632 guide and continue to notice review",
+    "description": "A visitor can read the SSA-632 guide and use its call-to-action to start notice analysis.",
+    "category": "SEO guide pages",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /ssa-632-guide"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the call-to-action section"
+      },
+      {
+        "type": "action",
+        "description": "Click the call-to-action to continue to notice review"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the notice review page is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify guide content is no longer the primary view"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC033",
+    "title": "Open the withholding guide and continue to notice review",
+    "description": "A visitor can read the withholding guide and use its call-to-action to start notice analysis.",
+    "category": "SEO guide pages",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /stop-overpayment-withholding"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the call-to-action section"
+      },
+      {
+        "type": "action",
+        "description": "Click the call-to-action to continue to notice review"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the notice review page is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify guide content is no longer the primary view"
+      }
+    ],
+    "priority": "Medium"
   }
 ]

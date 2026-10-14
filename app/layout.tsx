@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   openGraph: { title: "ClawbackShield", description: desc, type: "website", siteName: "ClawbackShield" }, twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
 };
+const SITE = process.env.URL || process.env.NEXT_PUBLIC_SITE_URL || "https://clawbackshield.netlify.app";
+const orgLd = [
+  { "@context": "https://schema.org", "@type": "Organization", "@id": SITE + "/#org", name: "ClawbackShield", url: SITE, logo: SITE + "/logo.svg", description: desc, sameAs: ["https://github.com/lucifer-grokbot/clawbackshield"] },
+  { "@context": "https://schema.org", "@type": "WebSite", "@id": SITE + "/#site", name: "ClawbackShield", url: SITE, publisher: { "@id": SITE + "/#org" } },
+];
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
@@ -19,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         <main>{children}</main>
         <Disclaimer />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }} />
       </body>
     </html>
   );

@@ -1,0 +1,28 @@
+# ClawbackShield
+
+> Plain-English help for U.S. Social Security and SSI overpayment ("clawback") notices. Paste or upload a notice to get a free summary of the amount, deadlines and options, then build an SSA-632-BK waiver case, a pause-withholding letter and a post-filing tracker. Not a law firm, not legal advice, not affiliated with SSA.
+
+Key facts (with official sources):
+- Waiver: SSA must waive recovery if you were not at fault and repaying would defeat the purpose of benefits or be against equity and good conscience (20 CFR 404.506; 20 CFR 416.550). You can ask any time.
+- Phone waiver: original overpayments of $2,000 or less can often be waived by phone at 1-800-772-1213 if SSA can presume no fault (SSA POMS GN 02250.350).
+- Withholding: default is 50% of the monthly Social Security benefit for notices sent on or after April 25, 2025; 10% for SSI. Filing a waiver or appeal within 30 days generally delays withholding until SSA decides.
+- Forms: SSA-632-BK (waiver), SSA-561 (reconsideration, 60-day deadline), SSA-634 (lower recovery rate).
+
+## Guides
+- [Social Security overpayment waiver](https://clawbackshield.netlify.app/social-security-overpayment-waiver): who qualifies, waiver vs appeal, step by step
+- [SSA-632 / SSA-632-BK guide](https://clawbackshield.netlify.app/ssa-632-guide): what the waiver form asks and how to answer
+- [Stop overpayment withholding](https://clawbackshield.netlify.app/stop-overpayment-withholding): current withholding rules and how to pause or lower them
+- [Waiver by phone](https://clawbackshield.netlify.app/waiver-by-phone): free phone waiver for overpayments of $2,000 or less
+- [Free PDF waiver guide](https://clawbackshield.netlify.app/guide)
+
+## Product
+- [Read my notice (free)](https://clawbackshield.netlify.app/analyze)
+- [Pricing](https://clawbackshield.netlify.app/pricing): notice explanation free; Waiver Case $299 per case one-time; Notice Watch $19/month; done-with-you help from $599
+- [Help](https://clawbackshield.netlify.app/help)
+- [Checklist](https://clawbackshield.netlify.app/checklist)
+
+## Optional
+- [Full text for LLMs](https://clawbackshield.netlify.app/llms-full.txt)
+- [Terms](https://clawbackshield.netlify.app/terms)
+- [Privacy](https://clawbackshield.netlify.app/privacy)
+- Official SSA source: https://www.ssa.gov/manage-benefits/overpayments
