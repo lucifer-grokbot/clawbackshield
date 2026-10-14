@@ -38,4 +38,5 @@ export function newCase(owner: string, b: Record<string, any>): Case {
   const now = new Date().toISOString();
   return { id: crypto.randomUUID(), owner: owner.toLowerCase(), createdAt: now, updatedAt: now, ...sanitize(b), status: "intake", log: [{ at: now, status: "intake", note: "Case created" }], evidence: {}, unlocked: false, reminders: true, remindersSent: [] };
 }
-export const canUnlockFree = (u: User) => u.plan === "caregiver";
+// Packets are per case now; Notice Watch does not include free unlocks.
+export const canUnlockFree = (_u: User) => false;

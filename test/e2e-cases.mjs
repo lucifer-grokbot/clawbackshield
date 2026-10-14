@@ -24,6 +24,14 @@ await step("intake", async () => {
 await step("tracker", async () => { await p.waitForSelector("[data-testid=deadline]"); const t = await p.locator("[data-testid=deadline]").allInnerTexts(); await shot(p, "case-locked-or-new"); return { deadlines: t.map((x) => x.replace(/\s+/g, " ").slice(0, 90)) }; });
 await step("unlock-pro", async () => { await p.click("text=Unlock this case"); await p.waitForSelector("text=SSA-632 answer sheet"); });
 await step("drafts", async () => { await p.click("text=Write my drafts"); await p.waitForSelector("text=Regenerate drafts", { timeout: 60000 }); const t = await p.locator("details[open] pre").first().innerText(); await shot(p, "case-unlocked"); return { draftStart: t.slice(0, 60) }; });
+await step("post-filing", async () => {
+  await p.locator("[data-testid=tracking]").scrollIntoViewIfNeeded(); await p.click("text=Mark as filed"); await p.waitForSelector("[data-testid=followup]");
+  await p.fill("#cl", "Spoke to Ms. Lee. Waiver received, withholding paused."); await p.click("text=Save call"); await p.waitForSelector("text=Called SSA: Spoke to Ms. Lee");
+  await p.click("[data-testid=pause-letter] summary"); const letter = await p.locator("[data-testid=pause-letter] pre").innerText();
+  const tl = await p.locator("[data-testid=timeline]").innerText(); await p.locator("[data-testid=tracking]").screenshot({ path: `shots/${LIVE ? "live-" : ""}case-timeline.png` });
+  await p.selectOption("#dout", "conference"); await p.click("text=Add to decision log"); await p.waitForSelector("text=Personal conference scheduled");
+  return { timeline: tl.replace(/\s+/g, " ").slice(0, 160), letterHasRequest: letter.includes("stop recovering this overpayment"), followups: await p.locator("[data-testid=followup]").count() };
+});
 await step("pdf", async () => {
   const [dl] = await Promise.all([p.waitForEvent("download"), p.click("text=Download PDF packet")]); const f = `/tmp/packet${LIVE ? "-live" : ""}.pdf`; await dl.saveAs(f);
   const txt = execSync(`pdftotext ${f} -`).toString(); const pages = execSync(`pdfinfo ${f} | grep Pages`).toString().trim();
@@ -52,11 +60,11 @@ if (!LIVE) {
     const r = await q.request.post(BASE + "/api/auth/request", { data: { email: `free-${Date.now()}@example.com`, next: "/cases/new" } }); await q.goto((await r.json()).devLink);
     await q.fill("#nd", "2026-10-01"); await q.fill("#amt", "3000"); for (let i = 0; i < 3; i++) await q.click("text=Continue"); await q.click("text=Create my case"); await q.waitForSelector("[data-testid=locked]");
     const draft = await q.request.post(q.url().split("?")[0].replace("/cases/", "/api/cases/") + "/drafts"); const pdf = await q.request.get(q.url().split("?")[0].replace("/cases/", "/api/cases/") + "/packet");
-    await shot(q, "free-locked"); await q.click("text=Unlock for $99"); await q.waitForSelector("text=Lite purchase went through"); await q.click("text=Unlock this case"); await q.waitForSelector("text=SSA-632 answer sheet");
+    await shot(q, "free-locked"); await q.click("text=Unlock this case: $299"); await q.waitForSelector("text=case purchase went through"); await q.click("text=Unlock this case"); await q.waitForSelector("text=SSA-632 answer sheet");
     return { draftBeforeUnlock: draft.status(), pdfBeforeUnlock: pdf.status() };
   });
   await step("other-user-cannot-read", async () => { const id = new URL(p.url().includes("/cases/") ? p.url() : BASE).pathname; const list = await p.request.get(BASE + "/api/cases"); const mine = (await list.json()).cases[0].id; const r = await q.request.get(BASE + "/api/cases/" + mine); return { status: r.status() }; });
   await step("anon-api", async () => { const r = await (await b.newContext()).request.get(BASE + "/api/cases"); return { status: r.status() }; });
-  const m = await b.newPage({ viewport: { width: 390, height: 844 } }); await step("mobile", async () => { await m.goto(BASE + "/help"); await shot(m, "mobile-help"); await m.goto(BASE + "/"); await m.locator("text=Waiver Assistant Lite").first().scrollIntoViewIfNeeded(); await m.screenshot({ path: "shots/cases-mobile-pricing.png" }); });
+  const m = await b.newPage({ viewport: { width: 390, height: 844 } }); await step("mobile", async () => { await m.goto(BASE + "/help"); await shot(m, "mobile-help"); await m.goto(BASE + "/"); await m.locator("text=Waiver Case").first().scrollIntoViewIfNeeded(); await m.screenshot({ path: "shots/cases-mobile-pricing.png" }); });
 }
 console.log(JSON.stringify(R, null, 1)); await b.close();

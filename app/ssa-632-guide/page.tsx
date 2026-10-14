@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import SeoPage from "@/components/SeoPage";
+const path = "/ssa-632-guide";
+export const metadata: Metadata = { title: "SSA-632 and SSA-632-BK Guide: How to Fill Out the Waiver Form", description: "Plain-English guide to Form SSA-632-BK (Request for Waiver of Overpayment Recovery): when to use it, what each part asks, proof to attach, and where to send it.", alternates: { canonical: path }, openGraph: { title: "SSA-632-BK guide", url: path } };
+export default function Page() {
+  return <SeoPage path={path} eyebrow="SSA-632 guide" title="SSA-632 and SSA-632-BK: how to fill out the waiver form"
+    lead="SSA-632-BK is the official Request for Waiver of Overpayment Recovery. People call it the SSA-632. It's the same form. Here's what it asks and how to answer it well."
+    secs={[
+      { h: "SSA-632 vs. SSA-632-BK", body: <p>&quot;SSA-632-BK&quot; is the current form number (the BK marks the booklet version). &quot;SSA-632&quot; is shorthand. Use the latest version from <a href="https://www.ssa.gov/forms/ssa-632-bk.pdf" target="_blank" rel="noreferrer">ssa.gov/forms/ssa-632-bk.pdf</a>. It&apos;s free. Never pay for the form itself.</p> },
+      { h: "When to use it, and when not to", body: <><p>Use it if the overpayment wasn&apos;t your fault and you can&apos;t afford to repay, or repaying would be unfair.</p><ul><li><b>$2,000 or less?</b> The form itself tells you to call 1-800-772-1213 instead. See <Link href="/waiver-by-phone">waiver by phone</Link>.</li><li><b>Think the amount is wrong?</b> Use SSA-561 (reconsideration).</li><li><b>Only want smaller monthly payments?</b> Use SSA-634.</li></ul></> },
+      { h: "What the form asks", body: <ol><li><b>About the overpayment:</b> amount, the notice, and whose benefits.</li><li><b>Why you want a waiver:</b> not your fault, can&apos;t afford it, or unfair for other reasons. Check all that apply.</li><li><b>Fault questions:</b> what you knew, what you reported, when, and how. Be specific: dates, names, phone or office visits.</li><li><b>Household and finances:</b> who lives with you, monthly income, monthly expenses, and assets (cash, bank accounts, investments, extra property).</li><li><b>Signature:</b> the beneficiary, or the representative payee / legal guardian.</li></ol> },
+      { h: "Tips that make a difference", body: <ul><li>Tell the story in order: what changed, when you told SSA, what SSA did (or didn&apos;t do).</li><li>Use real monthly numbers. If expenses meet or exceed income, say so plainly.</li><li>Attach proof: bank statements (about 3 months), bills, medical costs, and any record of reporting.</li><li>Fill every section that applies. Blank answers slow things down.</li><li>Keep a full copy and proof of mailing or a fax confirmation.</li></ul> },
+      { h: "Where to send it", body: <p>Mail or fax it to your local Social Security office (find it at <a href="https://secure.ssa.gov/ICON/main.jsp" target="_blank" rel="noreferrer">ssa.gov office locator</a>), or hand it in. If money is being taken, also send a request to pause withholding. See <Link href="/stop-overpayment-withholding">stop withholding</Link>.</p> },
+      { h: "Let us pre-fill the answers", body: <p>ClawbackShield turns your situation into SSA-632 answers you can copy onto the form, plus a fault argument, hardship statement and cover letter. <Link href="/cases/new">Start a case</Link> ($299 per case; reading your notice is free).</p> },
+    ]} />;
+}

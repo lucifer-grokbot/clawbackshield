@@ -1,10 +1,12 @@
 import Link from "next/link";
 import SignupForm from "@/components/SignupForm";
+import Pricing from "@/components/Pricing";
+import Faq from "@/components/Faq";
 import { Reveal, Float, Underline } from "@/components/Motion";
 const steps = [
   { n: "1", t: "Paste or upload", d: "Drop in the notice as text, a PDF, or a phone photo." },
   { n: "2", t: "See it plainly", d: "Amount, reason, and the dates that matter, in plain English." },
-  { n: "3", t: "Pick a path", d: "Appeal, waiver, or payment plan, with a draft letter to review." },
+  { n: "3", t: "File and follow through", d: "Waiver packet, a pause-withholding letter, and reminders until SSA decides." },
 ];
 export default function Home() {
   return (
@@ -12,12 +14,12 @@ export default function Home() {
       <section className="hero-mesh border-b border-navy/10">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-[1.1fr_1fr] md:py-24">
         <Reveal>
-          <p className="eyebrow">For families, caregivers &amp; beneficiaries</p>
-          <h1 className="mt-4 font-serif text-[2.6rem] font-medium leading-[1.05] tracking-[-0.02em] md:text-[3.6rem]">Got an SSA overpayment letter? <span className="relative inline-block italic text-rust">Breathe.<Underline /></span> Here&apos;s what it means.</h1>
-          <p className="mt-6 max-w-lg text-xl leading-relaxed text-navy/80">We turn a confusing notice into a plain-English summary, the real deadlines, and a draft response you can review.</p>
+          <p className="eyebrow">For adult children handling a parent&apos;s benefits</p>
+          <h1 className="mt-4 font-serif text-[2.6rem] font-medium leading-[1.05] tracking-[-0.02em] md:text-[3.6rem]">SSA is clawing back Mom&apos;s check? <span className="relative inline-block italic text-rust">Fight back.<Underline /></span></h1>
+          <p className="mt-6 max-w-lg text-xl leading-relaxed text-navy/80">Many clawbacks start with SSA&apos;s own mistakes. We read the letter, build the waiver, and track it until SSA decides. You stay in control.</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/analyze" className="btn-primary text-lg">Read my notice →</Link>
-            <a href="#checklist" className="btn-ghost text-lg">Free checklist</a>
+            <Link href="/analyze" className="btn-primary text-lg">Read the notice free →</Link>
+            <Link href="/cases/new?for=parent" className="btn-ghost text-lg">I&apos;m helping a parent</Link>
           </div>
           <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-1 text-base text-navy/75"><li>✓ Not legal advice</li><li>✓ Not affiliated with SSA</li><li>✓ Notices aren&apos;t stored</li></ul>
         </Reveal>
@@ -42,9 +44,9 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-14">
-        <h2 className="font-serif text-4xl font-medium tracking-tight">Who it's for</h2>
+        <h2 className="font-serif text-4xl font-medium tracking-tight">Built for the family member who opens the mail</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
-          {[["Adult children", "Handling a parent's mail and benefits."], ["Rep payees", "Managing benefits for someone else."], ["Beneficiaries", "Surprised by a letter asking for money back."], ["Advocates", "Social workers and volunteers triaging cases."]].map(([t, d]) => (
+          {[["Adult children", "Mom's check just got cut in half. You're the one making the calls."], ["Spouses", "Juggling the household budget and SSA's letters."], ["Rep payees", "Managing benefits for someone else."], ["Beneficiaries", "Doing it yourself? It works for you too."]].map(([t, d]) => (
             <div key={t} className="card p-5"><h3 className="font-semibold">{t}</h3><p className="mt-1 text-base text-navy/80">{d}</p></div>
           ))}
         </div>
@@ -59,25 +61,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-14">
-        <div className="flex items-baseline gap-3"><h2 className="font-serif text-4xl font-medium tracking-tight">Pricing</h2><span className="rounded bg-amber-100 px-2 py-0.5 text-sm font-semibold text-rust">Test mode</span></div><p className="mt-2 text-navy/80">Start free. Pay only when you want the full packet, or a person to help. <Link className="underline" href="/guide">Get the free PDF guide</Link>.</p>
-        <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {[
-            { n: "Free", p: "$0", d: "Understand the notice today.", f: ["Plain-English explanation", "Deadline tracker + hardship calculator", "Free PDF waiver guide"], href: "/analyze", cta: "Read my notice" },
-            { n: "Waiver Assistant Lite", p: "$99", s: "one-time", d: "Everything to file one waiver yourself.", f: ["SSA-632 answer sheet to copy onto the form", "AI fault argument + hardship statement", "Cover letter + printable PDF packet", "Evidence checklist + filing steps"], hi: true, href: "/cases/new", cta: "Start a case" },
-            { n: "Waiver Assistant Pro", p: "$49", s: "/mo", d: "For caregivers handling several cases.", f: ["Case packets for every case", "50 notice explanations / month", "Deadline reminders by email"], href: "/account", cta: "Choose Pro" },
-            { n: "Help with your case", p: "$299+", s: "per case", d: "Done with you, by a real person.", f: ["We prepare the paperwork with you", "Follow-up until SSA decides", "First 10 families: founder-led"], href: "/help", cta: "Request help" },
-          ].map((t) => (
-            <div key={t.n} className={`card flex flex-col p-6 ${t.hi ? "ring-2 ring-amber" : ""}`}>
-              <h3 className="font-semibold">{t.n}</h3>
-              <p className="mt-2 font-serif text-4xl">{t.p}<span className="font-sans text-base text-navy/75">{t.s ? ` ${t.s}` : ""}</span></p>
-              <p className="mt-2 text-base text-navy/80">{t.d}</p>
-              <ul className="mt-4 flex-1 space-y-1 text-base">{t.f.map((x) => <li key={x}>✓ {x}</li>)}</ul>
-              <Link href={t.href} className={`${t.hi ? "btn-primary" : "btn-ghost"} mt-5 justify-center !py-2.5`}>{t.cta}</Link>
-            </div>
-          ))}
-        </div>
-      </section>
+      <Pricing />
+      <Faq />
 
       <section className="mx-auto max-w-6xl px-5 pb-14">
         <div className="grid gap-4 md:grid-cols-2">

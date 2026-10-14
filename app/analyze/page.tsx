@@ -58,6 +58,9 @@ export default function Analyze() {
               {res.noticeDate && <p className="mt-2 text-base text-cream/70">Notice dated {res.noticeDate}</p>}
             </div>
           </div>
+          {(() => { const n = Number(String(res.amount || "").replace(/[^0-9.]/g, "")); const small = n > 0 && n <= 2000;
+            return <div className={`rounded-xl border-2 p-4 text-base ${small ? "border-sage bg-sage-100" : "border-navy/15 bg-white"}`} data-testid="phone-waiver">
+              <b>{small ? "Good news: this may be fixable with a free phone call." : "Honest tip:"}</b> {small ? "For smaller overpayments (currently around $2,000 or less), SSA can often take a waiver request by phone, no form needed." : "Smaller overpayments (currently around $2,000 or less) can often be waived by phone for free."} Call SSA at 1-800-772-1213 and ask. You may not need to pay anyone. <a className="underline" href="/waiver-by-phone">How phone waivers work</a>.</div>; })()}
           <div className="card p-5">
             <h2 className="font-serif text-xl font-semibold">Key dates</h2>
             <ul className="mt-3 divide-y divide-navy/10">{res.keyDates?.map((k, i) => (
@@ -88,7 +91,7 @@ export default function Analyze() {
             <p className="mt-1 text-base">Turn this into a waiver case: deadline countdowns, a hardship calculator, SSA-632 answers you can copy onto the form, and a printable packet.</p>
             <div className="mt-4 flex flex-wrap gap-3">
               <button onClick={() => { try { sessionStorage.setItem("cs_prefill", JSON.stringify(res)); } catch {} window.location.href = "/cases/new"; }} className="btn-primary">Start my waiver case</button>
-              <a href="/help" className="btn-ghost">Get help with my case (from $299)</a>
+              <a href="/help" className="btn-ghost">Get help with my case (from $599)</a>
             </div>
           </div>
           {!!res.questionsToAsk?.length && <div className="card p-5"><h2 className="font-semibold">Questions to ask SSA</h2><ul className="mt-2 list-disc pl-5 text-base">{res.questionsToAsk.map((q) => <li key={q}>{q}</li>)}</ul></div>}

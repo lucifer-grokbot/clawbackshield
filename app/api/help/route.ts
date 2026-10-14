@@ -17,6 +17,6 @@ export async function POST(req: Request) {
   await kvSet(`help:${r.id}`, r); idx.push(r.id); await kvSet("help-index", idx);
   const owner = process.env.OWNER_EMAIL;
   if (owner) await sendEmail(owner, `New 'Help with your case' request: ${r.name}`, wrap(`<p><b>${esc(r.name)}</b> (${esc(r.email)}, ${esc(r.phone) || "no phone"}) for ${esc(r.forWho)}</p><p>Amount ${esc(r.amount)} · notice ${esc(r.noticeDate)} · withholding ${esc(r.withholding)}</p><p>${esc(r.details)}</p>`)).catch(() => null);
-  await sendEmail(r.email, "We got your request for help", wrap(`<p>Hi ${esc(r.name)}, thanks for reaching out. A real person will review your case and reply within 2 business days with next steps and a quote (from $299). If a deadline is within a few days, file your request with SSA first. Your rights don't depend on us.</p>`)).catch(() => null);
+  await sendEmail(r.email, "We got your request for help", wrap(`<p>Hi ${esc(r.name)}, thanks for reaching out. A real person will review your case and reply within 2 business days with next steps and a quote (from $599). If a deadline is within a few days, file your request with SSA first. Your rights don't depend on us.</p>`)).catch(() => null);
   return NextResponse.json({ ok: true, position: idx.length, spotsLeft: Math.max(0, HELP_SPOTS - idx.length) });
 }

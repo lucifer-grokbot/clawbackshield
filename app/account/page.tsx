@@ -26,13 +26,13 @@ export default async function Account({ searchParams }: { searchParams: { upgrad
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
           <form action="/api/checkout" method="post" className="rounded-lg border border-navy/15 p-4">
             <input type="hidden" name="plan" value="lite" />
-            <p className="font-semibold">{LITE.name} · {LITE.price}</p><p className="text-navy/80">Unlocks the full packet for one case. You have {user.caseCredits || 0} unused.</p>
-            <button className="btn-primary mt-3 !py-2">Buy Lite</button>
+            <p className="font-semibold">{LITE.name} · {LITE.price}</p><p className="text-navy/80">Unlocks the full packet and tracker for one case. You have {user.caseCredits || 0} unused.</p>
+            <button className="btn-primary mt-3 !py-2">Buy a case</button>
           </form>
           <form action="/api/checkout" method="post" className="rounded-lg border border-navy/15 p-4">
             <input type="hidden" name="plan" value="caregiver" />
-            <p className="font-semibold">{PLANS.caregiver.name} · {PLANS.caregiver.price}</p><p className="text-navy/80">Packets for every case + {PLANS.caregiver.limit} explanations a month.</p>
-            <button className="btn-primary mt-3 !py-2" disabled={user.plan === "caregiver"}>{user.plan === "caregiver" ? "Your plan" : "Choose Pro"}</button>
+            <p className="font-semibold">{PLANS.caregiver.name} · {PLANS.caregiver.price}</p><p className="text-navy/80">{PLANS.caregiver.limit} notice explanations a month, deadline and follow-up reminders on every case.</p>
+            <button className="btn-primary mt-3 !py-2" disabled={user.plan === "caregiver"}>{user.plan === "caregiver" ? "Your plan" : "Start Notice Watch"}</button>
           </form>
         </div>
         {!stripeOn() && <p className="mt-3 text-sm text-navy/70">{isLocal() ? <>Test mode: Stripe isn&apos;t configured, so &quot;Choose&quot; upgrades instantly without payment (dev only).</> : <>Paid plans open soon. Payments aren&apos;t switched on yet.</>}</p>}

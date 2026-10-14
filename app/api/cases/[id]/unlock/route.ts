@@ -7,7 +7,7 @@ export async function POST(_: Request, { params }: { params: { id: string } }) {
   const c = await getCase(u.email, params.id); if (!c) return notFound();
   if (c.unlocked) return NextResponse.json({ case: c });
   if (!canUnlockFree(u)) {
-    if ((u.caseCredits || 0) < 1) return NextResponse.json({ error: "Unlock this case with Waiver Assistant Lite ($99 one-time) or Pro.", purchase: true }, { status: 402 });
+    if ((u.caseCredits || 0) < 1) return NextResponse.json({ error: "Unlock this case for $299 (one-time).", purchase: true }, { status: 402 });
     u.caseCredits = (u.caseCredits || 0) - 1; await saveUser(u);
   }
   c.unlocked = true; c.log.unshift({ at: new Date().toISOString(), status: c.status, note: "Case packet unlocked" }); await saveCase(c);
