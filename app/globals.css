@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { font-size: 17px; }
+body { font-feature-settings: "tnum" 1; }
+.card { @apply rounded-xl border border-navy/10 bg-white shadow-[0_1px_0_rgba(19,33,60,0.05),0_14px_30px_-18px_rgba(19,33,60,0.35)]; }
+.eyebrow { @apply text-sm font-semibold uppercase tracking-[0.14em] text-rust; }
+.btn { @apply inline-flex items-center gap-2 rounded-md px-6 py-3.5 font-semibold transition focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-amber; }
+.btn-primary { @apply btn bg-navy text-cream hover:bg-navy-700; }
+.btn-ghost { @apply btn border-2 border-navy/20 text-navy hover:border-navy; }
+.hero-mesh { background: radial-gradient(60% 80% at 85% 10%, #F6E2D6 0%, transparent 60%), radial-gradient(50% 60% at 10% 0%, #DDEAE2 0%, transparent 60%), #FAF6EE; }
+.rule-lines { background-image: repeating-linear-gradient(0deg, transparent 0 31px, rgba(19,33,60,.06) 31px 32px); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #D99A2B; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }

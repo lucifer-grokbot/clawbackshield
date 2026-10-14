@@ -1,0 +1,16 @@
+import { chromium } from "playwright-core";
+import fs from "fs";
+const b = await chromium.launch({ executablePath: "/usr/bin/google-chrome", args: ["--no-sandbox"] });
+const p = await b.newPage({ viewport: { width: 1280, height: 800 } });
+await p.goto("http://localhost:3000/"); await p.waitForTimeout(800);
+await p.screenshot({ path: "shots/landing.png", fullPage: true });
+await p.screenshot({ path: "shots/landing-hero.png" });
+const m = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+await m.goto("http://localhost:3000/"); await m.screenshot({ path: "shots/landing-mobile.png" });
+await p.goto("http://localhost:3000/checklist"); await p.screenshot({ path: "shots/checklist.png", fullPage: true });
+await p.goto("http://localhost:3000/analyze");
+await p.fill("textarea", fs.readFileSync("test/notice.txt", "utf8"));
+await p.click("text=Explain it");
+await p.waitForSelector("#result", { timeout: 90000 }); await p.waitForTimeout(500);
+await p.screenshot({ path: "shots/analyze-result.png", fullPage: true });
+await b.close();

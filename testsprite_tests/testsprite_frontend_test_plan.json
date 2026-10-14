@@ -1,0 +1,785 @@
+[
+  {
+    "id": "TC001",
+    "title": "Get a plain-English explanation from a pasted notice",
+    "description": "A visitor can paste a Social Security overpayment notice, request an explanation, and receive a plain-English summary with key details and a draft response letter.",
+    "category": "/analyze notice intake and result flow",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notice text field with a complete overpayment notice message"
+      },
+      {
+        "type": "action",
+        "description": "Click the button to explain the notice"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a plain-English summary is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify overpayment details, important dates, response options, and a draft response letter are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Analyze a pasted notice and review the full summary",
+    "description": "A user can paste a Social Security overpayment notice, request an explanation, and see the plain-English summary, key dates, response options, and draft response letter.",
+    "category": "Notice analysis",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notice text field with a complete Social Security overpayment notice"
+      },
+      {
+        "type": "action",
+        "description": "Request an explanation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a plain-English summary is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the overpayment amount, key dates, response options, and draft response letter are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Analyze an uploaded notice file and review the results",
+    "description": "A user can upload a supported notice file, request an explanation, and see the analyzed notice summary and response details.",
+    "category": "Notice analysis",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Upload a supported notice file"
+      },
+      {
+        "type": "action",
+        "description": "Request an explanation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a notice summary is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify response details and a draft response letter are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "See the guest limit after one successful analysis",
+    "description": "A guest can complete one analysis and then receives the one-analysis-per-day limit message on a second attempt with a prompt to sign in free.",
+    "category": "/analyze notice intake and result flow",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notice text field with a complete overpayment notice message"
+      },
+      {
+        "type": "action",
+        "description": "Click the button to explain the notice"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an analysis result is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notice text field with a different complete overpayment notice message"
+      },
+      {
+        "type": "action",
+        "description": "Click the button to explain the notice"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a daily analysis limit message is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a prompt to sign in free is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Review account details and saved analysis history",
+    "description": "A signed-in user can open the account page and view their plan information, remaining analyses, and saved analysis history.",
+    "category": "Account and analysis history",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Open the test code sign-in flow"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to open the account page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify plan information is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify remaining analyses and saved analysis history are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Sign in with a test code and review account details",
+    "description": "A demo user can open the test code flow, sign in with a valid code, and see plan details, remaining analyses, and saved analysis history in the account area.",
+    "category": "Login and account access",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Open the test code sign-in flow"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the test code field with a valid code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /account"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify plan details are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify remaining analyses and saved analysis history are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Use a sample notice to see an explanation",
+    "description": "A visitor can load the sample notice on the analysis page, explain it, and review the sample result.",
+    "category": "/analyze notice intake and result flow",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Click the option to try a sample notice"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the sample notice text is populated"
+      },
+      {
+        "type": "action",
+        "description": "Click the button to explain the notice"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a sample plain-English summary is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a draft response letter is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "Open the test code sign-in flow",
+    "description": "A visitor can open the test code sign-in flow from the login page and enter a valid code to reach the account experience.",
+    "category": "Test code sign-in",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Open the test code sign-in flow"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the signed-in account experience is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "Request a sign-in link from the login page",
+    "description": "A user can open the login page, request an email sign-in link, and see the sign-in request status on the page.",
+    "category": "Login and account access",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Request the sign-in link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a sign-in request status message is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "Sign out from the account page",
+    "description": "A signed-in user can sign out from the account page and return to an unauthenticated state.",
+    "category": "Account and analysis history",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Open the test code sign-in flow"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the test code field with a valid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code"
+      },
+      {
+        "type": "action",
+        "description": "Click the sign out control"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the unauthenticated experience is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC011",
+    "title": "See guidance when the notice text is too short",
+    "description": "A visitor who submits an empty or too-short notice receives validation guidance instead of an analysis.",
+    "category": "/analyze notice intake and result flow",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Click the button to explain the notice"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a validation message for missing or too-short notice text is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC012",
+    "title": "Submit the checklist email signup and see confirmation",
+    "description": "A user can open the checklist page, submit an email address, and see the signup confirmation state.",
+    "category": "Checklist email capture",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /checklist"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Submit the email signup form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a confirmation state is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC013",
+    "title": "Request a sign-in link by email",
+    "description": "A visitor can enter an email address on the login page and see confirmation that email sign-in will open soon.",
+    "category": "Email sign-in request",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Click the button to request a sign-in link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email sign-in confirmation message is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC014",
+    "title": "Block access to the account page when not signed in",
+    "description": "An unauthenticated visitor who opens the account page is redirected or blocked from viewing account details.",
+    "category": "Login and account access",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /account"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify account details are not visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an access restriction or sign-in prompt is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC015",
+    "title": "Reject an invalid test code",
+    "description": "A visitor who enters an invalid test code sees an error message and remains unsigned in.",
+    "category": "Test code sign-in",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Open the test code sign-in flow"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the test code field with an invalid test code"
+      },
+      {
+        "type": "action",
+        "description": "Submit the test code"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an invalid test code error message is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC016",
+    "title": "Read the free checklist and join the email list",
+    "description": "A visitor can view the clawback response checklist and submit an email address to receive the confirmation state.",
+    "category": "Free checklist and email signup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /checklist"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the email signup section"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with test@example.com"
+      },
+      {
+        "type": "action",
+        "description": "Submit the email signup form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a signup confirmation state is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the checklist content remains available"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC017",
+    "title": "Use the sample notice walkthrough to see how the analyzer works",
+    "description": "A user can load the sample notice, request an explanation, and review the sample analysis results.",
+    "category": "Sample notice walkthrough",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Select the sample notice option"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the notice text is populated in the input area"
+      },
+      {
+        "type": "action",
+        "description": "Request an explanation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify sample analysis results are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC018",
+    "title": "Submit an email to the checklist signup",
+    "description": "A visitor can submit an email address on the checklist page and see a confirmation state.",
+    "category": "/checklist email capture submission and confirmation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /checklist"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Submit the email signup form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a confirmation state is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC019",
+    "title": "Open the draft letter after analysis",
+    "description": "A visitor can generate an analysis and then copy or download the draft response letter from the results view.",
+    "category": "/analyze notice intake and result flow",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notice text field with a complete overpayment notice message"
+      },
+      {
+        "type": "action",
+        "description": "Click the button to explain the notice"
+      },
+      {
+        "type": "action",
+        "description": "Click the control to copy or download the draft letter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the draft response letter remains available after the copy or download action"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC020",
+    "title": "Receive analysis summary by email when enabled",
+    "description": "A user can enable email delivery for the analysis summary and see a confirmation status after submitting a notice.",
+    "category": "Email delivery for analysis summary",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Enable email delivery for the summary"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notice text field with a complete Social Security overpayment notice"
+      },
+      {
+        "type": "action",
+        "description": "Request an explanation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email delivery status message is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC021",
+    "title": "See checklist guidance before signing up",
+    "description": "A visitor can open the checklist page and review the response guidance before submitting an email.",
+    "category": "Free checklist and email signup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /checklist"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the checklist guidance is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the email signup form is visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC022",
+    "title": "Download the draft response letter after analysis",
+    "description": "A user can complete an analysis and download the generated draft response letter.",
+    "category": "Notice analysis",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notice text field with a complete Social Security overpayment notice"
+      },
+      {
+        "type": "action",
+        "description": "Request an explanation"
+      },
+      {
+        "type": "action",
+        "description": "Download the draft response letter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the draft response letter download action completes successfully"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC023",
+    "title": "Reject an invalid email on the checklist form",
+    "description": "A visitor entering an invalid email address sees email validation and cannot reach the confirmation state.",
+    "category": "Free checklist and email signup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /checklist"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the email signup section"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with invalid-email"
+      },
+      {
+        "type": "action",
+        "description": "Submit the email signup form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email validation error is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the signup confirmation state is not visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC024",
+    "title": "Copy the draft response letter after analysis",
+    "description": "A user can complete an analysis and copy the generated draft response letter.",
+    "category": "Notice analysis",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /analyze"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notice text field with a complete Social Security overpayment notice"
+      },
+      {
+        "type": "action",
+        "description": "Request an explanation"
+      },
+      {
+        "type": "action",
+        "description": "Copy the draft response letter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the draft response letter copy action completes successfully"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC025",
+    "title": "See validation for an invalid email on the login page",
+    "description": "A visitor who submits the login email form with an empty or invalid address sees email validation guidance.",
+    "category": "Email sign-in request",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /login"
+      },
+      {
+        "type": "action",
+        "description": "Submit the email sign-in form without entering an email address"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email validation error is displayed"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC026",
+    "title": "Require email before submitting the checklist form",
+    "description": "A visitor leaving the checklist email field empty sees required-field validation instead of a successful signup.",
+    "category": "Free checklist and email signup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /checklist"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the email signup section"
+      },
+      {
+        "type": "action",
+        "description": "Submit the email signup form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a required-field validation error is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the signup confirmation state is not visible"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC027",
+    "title": "Keep checklist content available after signup",
+    "description": "After successful signup, the visitor still has access to the checklist guidance and confirmation state on the page.",
+    "category": "Free checklist and email signup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /checklist"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the email signup section"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with test@example.com"
+      },
+      {
+        "type": "action",
+        "description": "Submit the email signup form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a signup confirmation state is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the checklist guidance is still visible"
+      }
+    ],
+    "priority": "Low"
+  }
+]

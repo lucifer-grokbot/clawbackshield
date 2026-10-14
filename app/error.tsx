@@ -1,0 +1,2 @@
+"use client";
+export default function Error({ reset }: { error: Error; reset: () => void }) { return <div className="mx-auto max-w-xl px-5 py-24 text-center"><p className="eyebrow">Something went wrong</p><h1 className="mt-3 font-serif text-4xl font-medium">Sorry, that didn&apos;t load.</h1><p className="mt-3 text-navy/80">Please try again. If our AI reader is busy, waiting a minute usually fixes it.</p><button onClick={reset} className="btn-primary mt-6">Try again</button></div>; }
