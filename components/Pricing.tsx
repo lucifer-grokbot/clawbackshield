@@ -22,7 +22,7 @@ export default function Pricing({ heading = true }: { heading?: boolean }) {
           </div>
         ))}
       </div>
-      <p className="mt-4 text-base text-navy/75">Small overpayment? Under about $2,000, SSA can often take a waiver request by phone, free. <Link className="underline" href="/waiver-by-phone">See if yours qualifies</Link> before you pay anyone.</p>
+      <p className="mt-4 text-base text-navy/75">Small overpayment? Under about $2,000, SSA can often take a waiver request by phone, free. <Link className="underline" href="/waiver-by-phone">See if yours qualifies</Link> before you pay anyone. Think SSA got the amount wrong? <Link className="underline" href="/appeal-or-waiver">Take the 1-minute appeal-or-waiver chooser</Link>.</p>
     </section>
   );
 }

@@ -27,7 +27,7 @@ export default function Checklist({ searchParams }: { searchParams: { welcome?: 
       <div className="mt-8 rounded-2xl border border-navy/10 bg-white p-5 text-sm">
         <p className="font-semibold">Official sources</p>
         <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li><a className="underline" href="https://www.ssa.gov/manage-benefits/overpayments" target="_blank" rel="noreferrer">SSA: Overpayments</a></li>
+          <li><a className="underline" href="https://www.ssa.gov/manage-benefits/resolve-overpayment" target="_blank" rel="noreferrer">SSA: Overpayments</a></li>
           <li><a className="underline" href="https://www.ssa.gov/forms/ssa-561.html" target="_blank" rel="noreferrer">Form SSA-561: Request for Reconsideration</a></li>
           <li><a className="underline" href="https://www.ssa.gov/forms/ssa-632.html" target="_blank" rel="noreferrer">Form SSA-632: Request for Waiver of Overpayment Recovery</a></li>
           <li><a className="underline" href="https://www.ssa.gov/forms/ssa-634.html" target="_blank" rel="noreferrer">Form SSA-634: Request for Change in Overpayment Recovery Rate</a></li>

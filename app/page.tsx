@@ -68,7 +68,7 @@ export default function Home() {
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border-2 border-amber bg-amber-100 p-6">
             <h3 className="font-serif text-xl font-semibold">Important</h3>
-            <p className="mt-2 text-base">This is <b>not legal advice</b>, and we are <b>not affiliated with the Social Security Administration</b>. Deadlines and rules vary by case: always verify on your notice and at <a className="underline" href="https://www.ssa.gov/manage-benefits/overpayments" target="_blank" rel="noreferrer">ssa.gov</a>.</p>
+            <p className="mt-2 text-base">This is <b>not legal advice</b>, and we are <b>not affiliated with the Social Security Administration</b>. Deadlines and rules vary by case: always verify on your notice and at <a className="underline" href="https://www.ssa.gov/manage-benefits/resolve-overpayment" target="_blank" rel="noreferrer">ssa.gov</a>.</p>
           </div>
           <div className="card p-6">
             <h3 className="font-serif text-xl font-semibold">Your privacy</h3>

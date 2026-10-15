@@ -16,7 +16,7 @@ const Their = (x: string) => x[0].toUpperCase() + x.slice(1);
 const STEPS = ["The notice", "Whose fault", "Money each month", "Review"];
 export default function CaseIntake({ fromId }: { fromId?: string }) {
   const [f, setF] = useState<Form>(empty); const [step, setStep] = useState(0); const [busy, setBusy] = useState(false); const [err, setErr] = useState(""); const [prefilled, setPrefilled] = useState(false);
-  useEffect(() => { try { if (new URLSearchParams(window.location.search).get("for") === "parent") setF((p) => ({ ...p, managingFor: "parent" })); } catch {} }, []);
+  useEffect(() => { try { const q = new URLSearchParams(window.location.search); if (q.get("for") === "parent") setF((p) => ({ ...p, managingFor: "parent" })); const pw = q.get("path"); if (pw === "waiver" || pw === "reconsideration" || pw === "both") setF((p) => ({ ...p, pathway: pw })); } catch {} }, []);
   useEffect(() => {
     (async () => {
       let r: any = null;
@@ -76,7 +76,7 @@ export default function CaseIntake({ fromId }: { fromId?: string }) {
           <Field id="rs" label="Why SSA says you were overpaid"><textarea id="rs" rows={3} value={f.reason} onChange={(e) => set("reason", e.target.value)} className={inputCls} /></Field>
           <fieldset><legend className="font-medium">What do you want to ask for?</legend><div className="mt-2 grid gap-2 sm:grid-cols-3">
             {radio("pw", "waiver", f.pathway, (v) => set("pathway", v), "Waiver (SSA-632)")}{radio("pw", "reconsideration", f.pathway, (v) => set("pathway", v), "Appeal (SSA-561)")}{radio("pw", "both", f.pathway, (v) => set("pathway", v), "Both")}</div>
-            <p className="mt-1 text-sm text-navy/70">Waiver: "don't make us pay it back". Appeal: "your numbers or facts are wrong". Not sure? Choose waiver. You can change it later.</p></fieldset>
+            <p className="mt-1 text-sm text-navy/70">Waiver: "don't make us pay it back". Appeal: "your numbers or facts are wrong". Both: &quot;the amount is wrong, and even if it isn&apos;t, don&apos;t make us pay.&quot; Not sure? <a className="underline" href="/appeal-or-waiver" target="_blank" rel="noreferrer">Take the 1-minute chooser</a>. You can change it later.</p></fieldset>
         </>}
         {step === 1 && <>
           <Field id="wh2" label="In your own words, what happened?" hint={`When did things change for ${them} (work, income, living situation), and what did SSA do?`}><textarea id="wh2" rows={4} value={f.fault.whatHappened} onChange={(e) => setFault("whatHappened", e.target.value)} className={inputCls} /></Field>
